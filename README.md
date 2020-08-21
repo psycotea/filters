@@ -1,9 +1,8 @@
 
-### EasyList Brasil
+### EasyList filter brasil
 ```
-https://raw.githubusercontent.com/Sam5883/easylistbrasil/filtro/easylistbrasil.txt
+https://raw.githubusercontent.com/Sam5883/filters/filtro/easylistbrasil.txt
 ```
 
-Compatível com: ![AdBlock](https://i.imgur.com/3KbyifF.png) [Adblock][], ![AdBlock Plus](https://i.imgur.com/kPRCfhu.png) [Adblock Plus][], ![uBock Origin](https://i.imgur.com/PSFuzKb.png) [uBlock Origin][] e ![AdGuard](https://i.imgur.com/zmMHq2j.png) [AdGuard][].
+Compatível com: ![AdBlock](https://i.imgur.com/3KbyifF.png) [Adblock][], ![AdBlock Plus](https://i.imgur.com/kPRCfhu.png) [Adblock Plus][], ![uBock Origin](https://i.imgur.com/PSFuzKb.png) [uBlock Origin][] e ![AdGuard](https://i.imgur.com/zmMHq2j.png) [AdGuard].
 
-fork manteined by me. 
