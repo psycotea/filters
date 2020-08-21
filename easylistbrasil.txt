@@ -1,6 +1,6 @@
-! Version: 20202008001
+! Version: 20202008002
 ! Title: EasyList filter Brasil
-! Last modified: 21 Aug 2020 08:52 BRT
+! Last modified: 21 Aug 2020 09:10 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -109,28 +109,6 @@ reddit.com##button:has-text(/^Try Now$/):upward(4)
 |http*://$popup,script,third-party,xmlhttprequest,domain=vertvonline.org
 ! iptv.gratis
 |http*://$popup,script,third-party,xmlhttprequest,domain=iptv.gratis
-! vto.gratis
-|http*://$popup,script,third-party,xmlhttprequest,domain=vto.gratis
-! futebolaovivo.in
-/pagead/$domain=futebolaovivo.in|futebolaovivovitao.com|futemax.tv|sportzonline.co|wstream.to
-/redirect$domain=futebolaovivo.in|futebolaovivovitao.com|futemax.tv|sportzonline.co|wstream.to
-/safeframe/$domain=futebolaovivo.in|futebolaovivovitao.com|futemax.tv|sportzonline.co|wstream.to
-|http*://$popup,script,third-party,xmlhttprequest,domain=futebolaovivo.in
-! netu
-|http*://$popup,script,third-party,xmlhttprequest,domain=hqq.tv|hqq.watch
-||*.hqq.*/images/Black_and_white_mini_logo.png
-||moviestream.*^$popup,script,third-party,xmlhttprequest
-! up2stream
-|http*://$popup,script,third-party,xmlhttprequest,domain=up2stream.com
-! streamplay.to
-/sharing.js$script,third-party,domain=streamplay.me|streamplay.to
-|http*://$popup,script,third-party,xmlhttprequest,domain=streamplay.me|streamplay.to
-||amazonaws.com^$script,domain=globes.co.il|mp3goo.com|streamplay.me|streamplay.to
-||cloudfront.net^$script,domain=streamplay.to
-||dacash.streamplay.to^
-||streamplay.to/favicon-48x48.png
-||streamplay.to/images/videoplayer.png
-||streamplay.to/js/pu*/
 ! fastplay.to
 |http*://$popup,script,third-party,xmlhttprequest,domain=fastplay.to
 ! yourupload.com
