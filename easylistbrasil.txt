@@ -20,7 +20,7 @@ canais.ink#@#body > div:last-child
 megafilmes.co#@#div[class*="pop"]
 thenightseries.net#@#div[class="itens"] > a:first-child
 megafilmeshd50.top,megafilmesonline-hd.com#@#div[id^="ad"]
-assistirtvaovivo.tv,concrete.com.br,degames.xyz,diarioonline.com.br,encurta.net,fatosdesconhecidos.com.br,filmesonlineplay.com,gomovies.cool,gomovies.mx,gomovieshd.cc,ipfingerprints.com,liveleak.com,multicanais.com,player.theplatform.com,putlocker.vip,receitasdomestrecuca.com,speedtest.net,tecmundo.com.br,tugaflix.com,tugaflix.date,tvonlinegratis.ru,xmovies8.cloud#@#div[style*="z-index"]
+assistirtvaovivo.tv,concrete.com.br,degames.xyz,diarioonline.com.br,encurta.net,fatosdesconhecidos.com.br,filmesonlineplay.com,gomovies.cool,gomovies.mx,gomovieshd.cc,ipfingerprints.com,liveleak.com,multicanais.com,player.theplatform.com,putlocker.vip,receitasdomestrecuca.com,speedtest.net,tugaflix.com,tugaflix.date,tvonlinegratis.ru,xmovies8.cloud#@#div[style*="z-index"]
 !novo oglobo detect ads
 ||tinypass.com^$domain=oglobo.globo.com
 !epoca adblock detect
@@ -1469,9 +1469,6 @@ lapumiafilmes.com##div[id="post-10682"]
 ! mastercuriosidadesbr.com
 mastercuriosidadesbr.com##div[id^="adx"]
 mastercuriosidadesbr.com##td[background*="/topo.jpg"]
-! letras.mus.br
-letras.mus.br##.cnt-space-top
-letras.mus.br##div[id^="pub_"]
 ! filmesonline.blog
 filmesonline.blog##center > a[href*="/assistir-online.php"]
 filmesonline.blog##center > a[href*="/dow.php"]
