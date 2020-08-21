@@ -1,4 +1,4 @@
-! Version: 20202008002
+! Version: 20202108001
 ! Title: EasyList filter Brasil
 ! Last modified: 21 Aug 2020 09:10 BRT
 ! Expires: 04 days (update frequency)
