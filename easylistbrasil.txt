@@ -1,6 +1,6 @@
-! Version: 20202108001
+! Version: 20202308001
 ! Title: EasyList filter Brasil
-! Last modified: 21 Aug 2020 09:10 BRT
+! Last modified: 23 Aug 2020 09:10 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -27,8 +27,6 @@ assistirtvaovivo.tv,concrete.com.br,degames.xyz,diarioonline.com.br,encurta.net,
 ||tinypass.com^$domain=epoca.globo.com
 !bypass revistagalileu adblock detection
  ||tinypass.com^$domain=revistagalileu.globo.com
-!-----------------------Filtros de bloqueio de anúncio específico-----------------------!
-! *** easylistbrasil:easylistbrasil/specific_block.txt ***
 !youtube.com
 ||youtube.com/*/base.js$replace=/(playerResponse.adPlacements|playerResponse.playerAds)/_ad/
 ||youtube.com/*/base.js$replace=/(playerAds|adPlacement[a-zA-Z]+)/_da/
@@ -36,10 +34,10 @@ youtube.com#%#//scriptlet("json-prune", "playerResponse.adPlacements playerRespo
 youtube.com#%#//scriptlet("set-constant", "ytInitialPlayerResponse.adPlacements", "undefined")
 @@||youtube.com/get_video_info
 youtube.com##ytd-primetime-promo-renderer
-youtube.com##ytd-rich-section-renderer:has-text(Recommended movies)
-youtube.com##ytd-rich-section-renderer:has-text(Latest YouTube posts)
-youtube.com##ytd-rich-section-renderer:has-text(Breaking news)
 youtube.com###dismissable:has-text(Free with Ads)
+##ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(1)
+youtube.*##.ytd-rich-grid-renderer :has(.ytd-rich-item-renderer:has(.ytd-display-ad-renderer))
+youtube.*##ytd-display-ad-renderer
 !knowyourmeme.com
 knowyourmeme.com##div.combo-wrapper
 ! openload.co
