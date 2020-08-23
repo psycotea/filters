@@ -43,11 +43,8 @@ youtube.com###dismissable:has-text(Free with Ads)
 !knowyourmeme.com
 knowyourmeme.com##div.combo-wrapper
 ! openload.co
-!reddit.com
-reddit.com##h2:has-text(/^Updates from reddit$/):upward(1)
-reddit.com##h3:has-text(/^Top broadcast right now$/):upward(7)
-reddit.com##h2:has-text(/^Trending Communities$/):upward(6)
-reddit.com##button:has-text(/^Try Now$/):upward(4)
+!ytmp3
+ytmp3.cc###ad
 ! mail.ru
 ||ad.mail.ru/crossdomain.xml
 ||boom.mail.ru^
@@ -299,10 +296,6 @@ get.$domain=xilften.net
 ! aovivobrasil.com.br
 |http*://$popup,script,third-party,xmlhttprequest,domain=aovivobrasil.com.br
 ! adf.ly
-.php$script,domain=larati.net,activetect.net|ay.gy|brightvar.bid|briskgram.net|clearload.bid|swiftviz.net|uclaut.net|xterca.net
-||cdn.*/static/js/amvn.js^$domain=activetect.net|ay.gy|brightvar.bid|briskgram.net|clearload.bid|larati.net|swiftviz.net|uclaut.net|xterca.net
-! new
-activetect.net,ay.gy,brightvar.bid,briskgram.net,clearload.bid,larati.net,swiftviz.net,uclaut.net,xterca.net#$#abort-on-property-read frame_check; abort-on-property-read intpop; abort-on-property-read scripts
 ||cloudfront.net^$third-party,domain=activetect.net|ay.gy|brightvar.bid|briskgram.net|clearload.bid|larati.net|swiftviz.net|uclaut.net|xterca.net
 ! futeboltv.com
 |http*://$popup,script,third-party,xmlhttprequest,domain=futeboltv.com|futeboltvgratis.com
