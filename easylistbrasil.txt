@@ -1,6 +1,6 @@
-! Version: 20202308001
+! Version: 20202608001
 ! Title: EasyList filter Brasil
-! Last modified: 23 Aug 2020 09:10 BRT
+! Last modified: 26 Aug 2020 09:00 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -43,6 +43,9 @@ knowyourmeme.com##div.combo-wrapper
 ! openload.co
 !ytmp3
 ytmp3.cc###ad
+!tecmundo ad detect
+tecmundo.com.br##.fc-ab-root
+tecmundo.com.br##.tec--ad
 ! mail.ru
 ||ad.mail.ru/crossdomain.xml
 ||boom.mail.ru^
