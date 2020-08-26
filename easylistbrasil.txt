@@ -1,6 +1,6 @@
-! Version: 20202608001
+! Version: 20202608002
 ! Title: EasyList filter Brasil
-! Last modified: 26 Aug 2020 09:00 BRT
+! Last modified: 26 Aug 2020 10:12 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
