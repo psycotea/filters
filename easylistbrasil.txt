@@ -26,6 +26,9 @@ assistirtvaovivo.tv,concrete.com.br,degames.xyz,diarioonline.com.br,encurta.net,
 blogs.oglobo.globo.com###pub-fullbanner-1
 blogs.oglobo.globo.com###pub-box-materia
 oglobo.globo.com##.block__subpane--advertising.block__subpane
+!gazeta do povo
+||gazetadopovo.com.br/public/_css/paywall.css*$stylesheet
+gazetadopovo.com.br##.c-assine-container
 !epoca adblock detect
 ||tinypass.com^$domain=epoca.globo.com
 !bypass revistagalileu adblock detection
