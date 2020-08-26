@@ -23,6 +23,9 @@ megafilmeshd50.top,megafilmesonline-hd.com#@#div[id^="ad"]
 assistirtvaovivo.tv,concrete.com.br,degames.xyz,diarioonline.com.br,encurta.net,fatosdesconhecidos.com.br,filmesonlineplay.com,gomovies.cool,gomovies.mx,gomovieshd.cc,ipfingerprints.com,liveleak.com,multicanais.com,player.theplatform.com,putlocker.vip,receitasdomestrecuca.com,speedtest.net,tugaflix.com,tugaflix.date,tvonlinegratis.ru,xmovies8.cloud#@#div[style*="z-index"]
 !novo oglobo detect ads
 ||tinypass.com^$domain=oglobo.globo.com
+blogs.oglobo.globo.com###pub-fullbanner-1
+blogs.oglobo.globo.com###pub-box-materia
+oglobo.globo.com##.block__subpane--advertising.block__subpane
 !epoca adblock detect
 ||tinypass.com^$domain=epoca.globo.com
 !bypass revistagalileu adblock detection
@@ -46,6 +49,8 @@ ytmp3.cc###ad
 !tecmundo ad detect
 tecmundo.com.br##.fc-ab-root
 tecmundo.com.br##.tec--ad
+!twitch.com
+twitch.tv##.tw-z-above.tw-relative.tw-full-width.tw-c-text-base.blue-bar
 ! mail.ru
 ||ad.mail.ru/crossdomain.xml
 ||boom.mail.ru^
@@ -2309,6 +2314,8 @@ mirrordrive.net,onifile.com##div[class="afs_ads"]
 @@||icarros.com.br^$genericblock,generichide,image
 ! uol.com.br
 uol.com.br#@#[src*="data:image"]
+uol.com.br##.bannersticky-base
+uol.com.br##div.bg-banner.ads-wrapper
 ! rarbg.to
 @@||dyncdn.me/static/*/js/comments2.min.js
 @@||dyncdn.me/static/*/js/rating3.js
@@ -2386,6 +2393,13 @@ uol.com.br#@#[src*="data:image"]
 @@||nytimes.com^$generichide
 ! folha.uol.com.br
 @@||paywall.folha.uol.com.br/status.php$domain=f5.folha.uol.com.br
+folha.uol.com.br##bt-read-more-content
+folha.uol.com.br##.c-push-notification
+@@||paywall.folha.uol.com.br/status.php^$document
+!omelete.com
+omelete.com.br##.banner
+!outline.com
+outline.com##.noselect.footer
 ! tecnologiatech.com
 @@||*/ad_status.js$domain=tecnologiatech.com
 @@||tecnologiatech.com^$generichide
