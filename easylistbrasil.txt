@@ -1,6 +1,6 @@
-! Version: 20202608003
+! Version: 20202708001
 ! Title: EasyList filter Brasil
-! Last modified: 26 Aug 2020 12:56 BRT
+! Last modified: 27 Aug 2020 21:56 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -52,6 +52,8 @@ ytmp3.cc###ad
 !tecmundo ad detect
 tecmundo.com.br##.fc-ab-root
 tecmundo.com.br##.tec--ad
+!infomoney
+infomoney.com.br##+js(abort-on-property-read.js, addLink)
 !twitch.com
 twitch.tv##.tw-z-above.tw-relative.tw-full-width.tw-c-text-base.blue-bar
 ! mail.ru
@@ -1344,6 +1346,7 @@ istoe.com.br#?#div[id*="trc_wrapper_"]:-abp-has(div > span:-abp-contains(gostar)
 estadao.com.br##div[class^="taboola-"]
 ! gazetadopovo.com.br
 gazetadopovo.com.br##div[class^="c-publi"]
+gazetadopovo.com.br##+js(abort-on-property-write.js, copyRight)
 ! megafilmestorrents.org
 megafilmestorrents.org##a[href*="//goo.gl"]
 megafilmestorrents.org##dmbar[id="dm_topbar"]
@@ -2318,7 +2321,8 @@ mirrordrive.net,onifile.com##div[class="afs_ads"]
 ! uol.com.br
 uol.com.br#@#[src*="data:image"]
 uol.com.br##.bannersticky-base
-uol.com.br##div.bg-banner.ads-wrapper
+uol.com.br##div.bg-banner.ads-wrappergazetadopovo.com.br##+js(abort-on-property-write.js, copyRight)
+uol.com.br##+js(addEventListener-defuser.js, copy)
 ! rarbg.to
 @@||dyncdn.me/static/*/js/comments2.min.js
 @@||dyncdn.me/static/*/js/rating3.js
@@ -2395,10 +2399,11 @@ uol.com.br##div.bg-banner.ads-wrapper
 @@||*.nyt.com/analytics/show-ads.js
 @@||nytimes.com^$generichide
 ! folha.uol.com.br
-@@||paywall.folha.uol.com.br/status.php$domain=f5.folha.uol.com.br
+||paywall.folha.uol.com.br/*
+||static.folha.uol.com.br/paywall/*
+@@||paywall.folha.uol.com.br/status.php^$document
 folha.uol.com.br##bt-read-more-content
 folha.uol.com.br##.c-push-notification
-@@||paywall.folha.uol.com.br/status.php^$document
 !omelete.com
 omelete.com.br##.banner
 !outline.com
