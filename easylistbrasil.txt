@@ -1,6 +1,6 @@
-! Version: 20202708001
+! Version: 20202808001
 ! Title: EasyList filter Brasil
-! Last modified: 27 Aug 2020 21:56 BRT
+! Last modified: 28 Aug 2020 09:52 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -56,6 +56,9 @@ tecmundo.com.br##.tec--ad
 infomoney.com.br##+js(abort-on-property-read.js, addLink)
 !twitch.com
 twitch.tv##.tw-z-above.tw-relative.tw-full-width.tw-c-text-base.blue-bar
+twitch.tv##[class^="prime-offers__pill"]
+www.twitch.tv##.tw-relative.tw-justify-content-center.tw-flex.tw-align-items-center.featured-content-carousel
+www.twitch.tv##.tw-pd-x-3.tw-pd-t-2.front-page-carousel
 !uploadfiles
 uploadfiles.pw##+js(acis, decodeURI, decodeURIComponent)
 !clicknupload
