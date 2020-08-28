@@ -56,6 +56,11 @@ tecmundo.com.br##.tec--ad
 infomoney.com.br##+js(abort-on-property-read.js, addLink)
 !twitch.com
 twitch.tv##.tw-z-above.tw-relative.tw-full-width.tw-c-text-base.blue-bar
+!uploadfiles
+uploadfiles.pw##+js(acis, decodeURI, decodeURIComponent)
+!clicknupload
+clicknupload.co##+js(acis, Object.defineProperty, XMLHttpRequest)
+ clicknupload.co##+js(aopw, _pop)
 ! mail.ru
 ||ad.mail.ru/crossdomain.xml
 ||boom.mail.ru^
@@ -2321,7 +2326,7 @@ mirrordrive.net,onifile.com##div[class="afs_ads"]
 ! uol.com.br
 uol.com.br#@#[src*="data:image"]
 uol.com.br##.bannersticky-base
-uol.com.br##div.bg-banner.ads-wrappergazetadopovo.com.br##+js(abort-on-property-write.js, copyRight)
+uol.com.br##div.bg-banner.ads-wrapperdopovo.com.br##+js(abort-on-gazetaproperty-write.js, copyRight)
 uol.com.br##+js(addEventListener-defuser.js, copy)
 ! rarbg.to
 @@||dyncdn.me/static/*/js/comments2.min.js
