@@ -1,6 +1,6 @@
-! Version: 20200109002
+! Version: 20200109003
 ! Title: EasyList filter Brasil
-! Last modified: 01 Sep 2020 13:47 BRT
+! Last modified: 01 Sep 2020 13:52 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -37,6 +37,8 @@ npttech.com/advertising.js *fuckadblock.js
 ||f1-na.readspeaker.com/*
 !super.abril
 |https://super.abril.com.br/wp-content/plugins/abril-plugins/abril-paywall/js/paywall.js?ver=2.0.10
+!quatro rodas 
+|https://quatrorodas.abril.com.br/wp-content/plugins/abril-plugins/abril-paywall/js/paywall.js?ver=2.0.10
 !gazeta do povo
 ||gazetadopovo.com.br/public/_css/paywall.css*$stylesheet
 gazetadopovo.com.br##.c-assine-container
