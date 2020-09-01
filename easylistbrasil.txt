@@ -1,6 +1,6 @@
-! Version: 20202808002
+! Version: 20200109001
 ! Title: EasyList filter Brasil
-! Last modified: 28 Aug 2020 10:00 BRT
+! Last modified: 01 Sep 2020 09:55 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -1004,56 +1004,9 @@ viki.com##div[id^="google_ads_iframe_"]
 ! hardware.com.br
 hardware.com.br##div[id*="-ad-"]
 ! megafilmes
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##.banner
-megahfilmeshd.net##.close
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##.pub > iframe
-megahfilmeshd.net##.vizerNewBox adsbyvizer open
-megahfilmeshd.net##.vizerNewBox vizernoticia
-megahfilmeshd.net##.vizerNoticia
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##[class*="modal"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##[id*="anuncio"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##[id*="boxaml"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##[id*="floatLayer"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##[id*="modal"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##[id="countDown"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##[id^="ads"][id*="banner"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##a[class="bt-download"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##a[href*="ads"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##div > a[target="_top"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##div[align*="banner"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##div[class*="pop"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##div[class*="pub"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##div[class*="topBar"]
-megafilmegafilmeshdplus.org,megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesserieshd.com,mesonlinegratis.org##div[class="fake_player"]
-megahfilmeshd.net##div[class="row wrapi camquality wow fadeIn"]
-megahfilmeshd.net##div[class="vizerNewBox adsByVizer open"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##div[class^="adnl"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonlinegratis.org,megafilmesserieshd.com##div[class^="jw-logo"]
-megafilmes.co,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.commegafilmes.org##div[id*="-ad-"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##div[id*="ScriptRoot"]
-megafilmesserieshd.com##div[id*="account"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##div[id*="pop"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##div[id*="pub"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##div[id*="topBar"]
-megafilmeshdplus.org##div[id="fbox-background"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##div[id="playerads"]
-megahfilmeshd.net##div[id="sfkhp"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##div[id="show_plugin"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##div[id^="ad"]
-megafilmesahd.com##div[onclick*="travar"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##div[style*="z-index"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##dmbar[id="dm_topbar"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonlinegratis.org,megafilmesserieshd.com##ins[class*="adsbygoogle"]
-megafilmesahd.com##li:first-child
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##li[id="count"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##li[id="text-6"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##link[id="cextension-id"]
-megafilmes.co,megafilmes.org,megafilmes.tv,megafilmesahd.com,megafilmeshd50.top,megafilmeshdplus.org,megafilmesonline-hd.com,megafilmesonlinegratis.org,megafilmesserieshd.com##link[rel="chrome-webstore-item"]
-megafilmesahd.com,megafilmesonline-hd.com,megafilmeshdplus.org,megafilmesserieshd.com,megafilmes.org,megafilmes.co,megafilmesonlinegratis.org,megafilmeshdplus.org,megafilmes.tv,megafilmeshd50.top[id*="masthead"]
-megafilmesserieshd.com##span[class*="favorite"]
-megafilmes.tv##ul > li:first-child
-megafilmesserieshd.com##ul > li:last-child
-megafilmesahd.com##video[src*="mp4"]
+megafilmeshd.net###ad1
+megafilmeshd.net###ad2
+megafilmeshd.net##[href^="http://click.afiliados.uol.com.br/Clique"]
 ! filmesonline.online
 filmesonline.online##div[class="full-poster"] > center
 filmesonline.online##div[class="full-story"] > center
@@ -2408,11 +2361,10 @@ uol.com.br##+js(addEventListener-defuser.js, copy)
 @@||*.nyt.com/analytics/show-ads.js
 @@||nytimes.com^$generichide
 ! folha.uol.com.br
-||paywall.folha.uol.com.br/*
-||static.folha.uol.com.br/paywall/*
-@@||paywall.folha.uol.com.br/status.php^$document
-folha.uol.com.br##bt-read-more-content
-folha.uol.com.br##.c-push-notification
+||paywall.folha.uol.com.br^$domain=folha.uol.com.br
+||folha.uol.com.br/paywall/js/$script
+||folha.uol.com.br/folha/furniture/paywall/$xmlhttprequest
+||folha.uol.com.br/folha/furniture/paywall/loader.js$script
 !omelete.com
 omelete.com.br##.banner
 !outline.com
