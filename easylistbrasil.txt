@@ -1,6 +1,6 @@
-! Version: 20200109001
+! Version: 20200109002
 ! Title: EasyList filter Brasil
-! Last modified: 01 Sep 2020 09:55 BRT
+! Last modified: 01 Sep 2020 10:17 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -21,18 +21,14 @@ megafilmes.co#@#div[class*="pop"]
 thenightseries.net#@#div[class="itens"] > a:first-child
 megafilmeshd50.top,megafilmesonline-hd.com#@#div[id^="ad"]
 assistirtvaovivo.tv,concrete.com.br,degames.xyz,diarioonline.com.br,encurta.net,fatosdesconhecidos.com.br,filmesonlineplay.com,gomovies.cool,gomovies.mx,gomovieshd.cc,ipfingerprints.com,liveleak.com,multicanais.com,player.theplatform.com,putlocker.vip,receitasdomestrecuca.com,speedtest.net,tugaflix.com,tugaflix.date,tvonlinegratis.ru,xmovies8.cloud#@#div[style*="z-index"]
-!novo oglobo detect ads
-||tinypass.com^$domain=oglobo.globo.com
+!novo domain globo ad block detect
+||tinypass.com^$domain=oglobo.globo.com|epoca.globo.com|revistagalileu.globo.com
 blogs.oglobo.globo.com###pub-fullbanner-1
 blogs.oglobo.globo.com###pub-box-materia
 oglobo.globo.com##.block__subpane--advertising.block__subpane
 !gazeta do povo
 ||gazetadopovo.com.br/public/_css/paywall.css*$stylesheet
 gazetadopovo.com.br##.c-assine-container
-!epoca adblock detect
-||tinypass.com^$domain=epoca.globo.com
-!bypass revistagalileu adblock detection
- ||tinypass.com^$domain=revistagalileu.globo.com
 !youtube.com
 ||youtube.com/*/base.js$replace=/(playerResponse.adPlacements|playerResponse.playerAds)/_ad/
 ||youtube.com/*/base.js$replace=/(playerAds|adPlacement[a-zA-Z]+)/_da/
@@ -2365,6 +2361,8 @@ uol.com.br##+js(addEventListener-defuser.js, copy)
 ||folha.uol.com.br/paywall/js/$script
 ||folha.uol.com.br/folha/furniture/paywall/$xmlhttprequest
 ||folha.uol.com.br/folha/furniture/paywall/loader.js$script
+folha.uol.com.br##bt-read-more-content
+folha.uol.com.br##.c-push-notification
 !omelete.com
 omelete.com.br##.banner
 !outline.com
