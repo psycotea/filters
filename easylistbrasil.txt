@@ -1,6 +1,6 @@
 ! Version: 20200109002
 ! Title: EasyList filter Brasil
-! Last modified: 01 Sep 2020 10:17 BRT
+! Last modified: 01 Sep 2020 13:47 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -26,6 +26,17 @@ assistirtvaovivo.tv,concrete.com.br,degames.xyz,diarioonline.com.br,encurta.net,
 blogs.oglobo.globo.com###pub-fullbanner-1
 blogs.oglobo.globo.com###pub-box-materia
 oglobo.globo.com##.block__subpane--advertising.block__subpane
+!infoglobo
+||*.infoglobo.com.br/*private-browsing*
+||*.infoglobo.com.br/paywall*
+||ogjs.infoglobo.com.br/*autenticacao*
+!npttech
+npttech.com/advertising.js *fuckadblock.js
+!readspeaker
+||*.readspeaker.com/*
+||f1-na.readspeaker.com/*
+!super.abril
+|https://super.abril.com.br/wp-content/plugins/abril-plugins/abril-paywall/js/paywall.js?ver=2.0.10
 !gazeta do povo
 ||gazetadopovo.com.br/public/_css/paywall.css*$stylesheet
 gazetadopovo.com.br##.c-assine-container
@@ -2303,6 +2314,8 @@ uol.com.br##+js(addEventListener-defuser.js, copy)
 @@||filmesonlinegratis.*/wp-admin/admin-ajax.php
 ! nexojornal.com.br
 @@||nexojornal.com.br^$xmlhttprequest
+||www.nexojornal.com.br/assets/components-PaywallBanner-Datawall
+||www.nexojornal.com.br/assets/components-PaywallBanner-PaywallBumper
 ! cocacola
 @@||coca-cola.*^$generichide
 @@||cocacola.*^$generichide
