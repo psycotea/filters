@@ -1,6 +1,6 @@
-! Version: 20200409001
+! Version: 20200609001
 ! Title: EasyList filter Brasil
-! Last modified: 04 Sep 2020 12:35 BRT
+! Last modified: 06 Sep 2020 11:13 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -26,6 +26,8 @@ assistirtvaovivo.tv,concrete.com.br,degames.xyz,diarioonline.com.br,encurta.net,
 blogs.oglobo.globo.com###pub-fullbanner-1
 blogs.oglobo.globo.com###pub-box-materia
 oglobo.globo.com##.block__subpane--advertising.block__subpane
+!phonearena
+phonearena.com##+js(nostif, f.parentNode.removeChild(f), 100)
 !infoglobo
 ||*.infoglobo.com.br/*private-browsing*
 ||*.infoglobo.com.br/paywall*
