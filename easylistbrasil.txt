@@ -1,6 +1,6 @@
-! Version: 20200609001
+! Version: 20200609002
 ! Title: EasyList filter Brasil
-! Last modified: 06 Sep 2020 11:13 BRT
+! Last modified: 06 Sep 2020 16:35 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -2113,8 +2113,6 @@ mirrordrive.net,onifile.com##div[class="afs_ads"]
 @@||seuseriado.com^$generichide
 ! abril.com.br
 @@||abril.com.br^$generichide
-! globo.com
-@@||globo.com^$generichide
 ! r7.com
 @@||sc.r7.com/ads.js
 ! reviewsdecelular.ga
