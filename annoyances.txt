@@ -14,6 +14,7 @@ google.com##body:style(overflow: auto !important;)
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/7l54xr/metro_copyjacking_filter/
 metro.co.uk##+js(aeld, copy, BLACKLIST)
+folhaonline.es##.fl-col-has-cols > div[class="fl-col-content fl-node-content"] > div.fl-col-group-align-center.fl-col-group-custom-width
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1069
 nerdmaldito.com##+js(ra, onselectstart)
@@ -23,13 +24,6 @@ nerdmaldito.com##+js(aopw, document.onselectstart)
 portaleds.com##+js(ra, oncontextmenu|onselectstart)
 portaleds.com##+js(aopr, checkkey)
 
-! re-enabling of right-click functionality
-! https://forums.lanik.us/viewtopic.php?f=62&t=36339
-! https://github.com/uBlockOrigin/uAssets/issues/1144#issuecomment-354648833
-! https://github.com/uBlockOrigin/uAssets/issues/909
-! https://github.com/uBlockOrigin/uAssets/issues/1163
-! https://github.com/jspenguin2017/uBlockProtector/issues/789
-! https://github.com/jspenguin2017/uBlockProtector/issues/790
 freewebscript.com##+js(acis, $, contextmenu)
 linkurl.org##+js(acis, $, contextmenu)
 linkurl.org,planetatvonlinehd.com##+js(aopw, document.oncontextmenu)
@@ -1086,12 +1080,8 @@ instagram.com##[class]:style(-webkit-touch-callout: default !important; -webkit-
 forum.politz.com.br##+js(acis, document.getElementById, tester)
 forum.politz.com.br##.js-notices[data-type="block"]
 
-! https://github.com/uBlockOrigin/uAssets/issues/4235
 shoppable.com###cookiesModal, .in.fade.modal-backdrop
 shoppable.com##body:style(overflow: auto !important;)
-
-! https://github.com/uBlockOrigin/uAssets/issues/4237
-! https://github.com/NanoMeow/QuickReports/issues/3139
 @@||md5hashing.net^$ghide
 *$script,3p,redirect-rule=noopjs,domain=md5hashing.net
 md5hashing.net##.alert-danger.alert
