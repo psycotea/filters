@@ -1,6 +1,6 @@
-! Version: 202000809002
+! Version: 202000809003
 ! Title: EasyList filter Brasil
-! Last modified: 08 Sep 2020 11:07 BRT
+! Last modified: 08 Sep 2020 18:13 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -34,6 +34,8 @@ phonearena.com##+js(nostif, f.parentNode.removeChild(f), 100)
 ||ogjs.infoglobo.com.br/*autenticacao*
 !npttech
 npttech.com/advertising.js *fuckadblock.js
+!imgur
+imgur.com##+js(set, usesABP, false)
 !readspeaker
 ||*.readspeaker.com/*
 ||f1-na.readspeaker.com/*
