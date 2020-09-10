@@ -1,6 +1,6 @@
-! Version: 202000809003
+! Version: 202001009001
 ! Title: EasyList filter Brasil
-! Last modified: 08 Sep 2020 18:13 BRT
+! Last modified: 10 Sep 2020 08:40 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -41,6 +41,15 @@ imgur.com##+js(set, usesABP, false)
 ||f1-na.readspeaker.com/*
 !sharpen.design
 @@||sharpen.design^script,xhr,1p
+!google recaptcha
+@@||www.google.com/recaptcha/*$css
+@@||www.google.com/recaptcha/*$image
+@@||www.google.com/recaptcha/*$media
+@@||www.google.com/recaptcha/*$script
+@@||www.google.com/recaptcha/*$xhr
+@@||www.google.com/recaptcha/*$frame
+@@||www.gstatic.com/recaptcha/*$script
+@@||www.gstatic.com/recaptcha/*$xhr
 !bing 
 bing.com##.b_ad:style(position: absolute!important; left: -3000px!important;)
 bing.com##^#b_results > .b_ad
