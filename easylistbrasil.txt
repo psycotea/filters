@@ -1,6 +1,6 @@
-! Version: 202001009001
+! Version: 20201109001
 ! Title: EasyList filter Brasil
-! Last modified: 10 Sep 2020 08:40 BRT
+! Last modified: 11 Sep 2020 07:28 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -26,6 +26,20 @@ assistirtvaovivo.tv,concrete.com.br,degames.xyz,diarioonline.com.br,encurta.net,
 blogs.oglobo.globo.com###pub-fullbanner-1
 blogs.oglobo.globo.com###pub-box-materia
 oglobo.globo.com##.block__subpane--advertising.block__subpane
+!clicknupload
+clicknupload.co##+js(acis, String.fromCharCode, /'shift'|break;/)
+*$script,3p,denyallow=bootstrapcdn.com|disqus.com|jsdelivr.net|jwpcdn.com|fastly.net|fastlylb.net|jquery.com|hwcdn.net|recaptcha.net|cloudflare.com|cloudflare.net|google.com|googleapis.com|gstatic.com|facebook.net,domain=extramovies.*
+@@||gdpr-tcfv2.sp-prod.net/wrapperMessagingWithoutDetection.js$script,domain=sport1.de
+ @@||googletagmanager.com/gtm.js$script,domain=sport1.de
+ @@||sp-prod.net^$xhr,domain=sport1.de
+ clk.ink##+js(aopw, adBlockDetected)
+ clk.ink##+js(aopw, Fingerprint2)
+ clk.ink##+js(noeval)
+ clk.ink##+js(set, blurred, false)
+ clk.ink##[data-captcha-enable="true"]
+ clk.ink##[src^="/ads/"]
+ clk.*##+js(aopr, document.head.appendChild)
+ ||clk.ink/sw.js$script,1p
 !phonearena
 phonearena.com##+js(nostif, f.parentNode.removeChild(f), 100)
 !infoglobo
@@ -107,7 +121,6 @@ clicknupload.co##+js(acis, Object.defineProperty, XMLHttpRequest)
 ||mail.ru^*/jquery.shares.
 ||my1.imgsmail.ru/mail/ru/images/my/compass/static/head/
 ||my2.imgsmail.ru/mail/ru/images/my/compass/static/alert/
-||platform.twitter.com^$domain=mail.ru
 ||webagent.mail.ru^
 ! flashx
 /atrk.gif$domain=flashx.co|flashx.tv|flashx1.tv
@@ -722,7 +735,6 @@ auto.mail.ru##.box__block.box__block_main
 ##.icon-player-backscreen_video_gplus_share_60x60
 ##.icon-player-backscreen_video_mm_share_60x60
 ##.icon-player-backscreen_video_ok_share_60x60
-##.icon-player-backscreen_video_twitter_share_60x60
 ##.icon-player-backscreen_video_vk_share_60x60
 sport.mail.ru##.likeframes
 ##.mfv_smsTop
