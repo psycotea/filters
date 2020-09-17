@@ -1,6 +1,6 @@
-! Version: 20201509002
+! Version: 20201609001
 ! Title: EasyList filter Brasil
-! Last modified: 15 Sep 2020 08:30 BRT
+! Last modified: 16 Sep 2020 08:01 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -42,6 +42,17 @@ clicknupload.co##+js(acis, String.fromCharCode, /'shift'|break;/)
  ||clk.ink/sw.js$script,1p
 !phonearena
 phonearena.com##+js(nostif, f.parentNode.removeChild(f), 100)
+!folha and uol 
+! https://github.com/uBlockOrigin/uAssets/issues/66
+||paywall.folha.uol.com.br/wall.jsonp?callback=paywall.inicio$domain=blogfolha.uol.com.br|educacao.uol.com.br|folha.uol.com.br
+! https://github.com/uBlockOrigin/uAssets/issues/124
+||jsuol.com.br/*/detectadblock/$script,important,domain=uol.com.br
+! https://github.com/uBlockOrigin/uAssets/issues/765
+www.uol##.content-lightbox
+www.uol##.overlay-lightbox
+uol.com.br##.banner
+uol.com.br##.bg-banner
+uol.com.br##[id^="banner-300x250"]:remove()
 !infoglobo
 ||*.infoglobo.com.br/*private-browsing*
 ||*.infoglobo.com.br/paywall*
