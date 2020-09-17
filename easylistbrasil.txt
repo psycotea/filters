@@ -1,6 +1,6 @@
-! Version: 20201609002
+! Version: 20201609003
 ! Title: EasyList filter Brasil
-! Last modified: 16 Sep 2020 08:07 BRT
+! Last modified: 16 Sep 2020 12:29 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -72,6 +72,21 @@ www.estadao.com.br##.assine-bar
 npttech.com/advertising.js *fuckadblock.js
 !imgur
 imgur.com##+js(set, usesABP, false)
+! Spotify Ads Blocker
+ads.pubmatic.com
+gads.pubmatic.com
+pubads.g.doubleclick.net
+securepubads.g.doubleclick.net
+www.googletagservices.com
+||cloudfront.net/mp3-ad
+||adeventtracker.spotify.com
+/mp3-ad/*$domain=open.spotify.com
+@@||spclient.wg.spotify.com/connect-api/v2/from/*$xmlhttprequest,domain=open.spotify.com
+@@||spclient.wg.spotify.com/connect-api$xmlhttprequest,domain=open.spotify.com
+*cloudfront.net/mp3-ad/*
+@@||spclient.wg.spotify.com/connect-api$xmlhttprequest,domain=open.spotify.com
+/mp3-ad/*
+||audio-fa.scdn.co/audio/*$media,redirect=noopmp3-0.1s,domain=open.spotify.com
 !readspeaker
 ||*.readspeaker.com/*
 ||f1-na.readspeaker.com/*
