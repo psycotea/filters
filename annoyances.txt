@@ -16,6 +16,11 @@ google.com##body:style(overflow: auto !important;)
 metro.co.uk##+js(aeld, copy, BLACKLIST)
 folhaonline.es##.fl-col-has-cols > div[class="fl-col-content fl-node-content"] > div.fl-col-group-align-center.fl-col-group-custom-width
 
+!folha.uol
+www1.folha.uol.com.br##div:nth-child(3) > header.l-header.u-no-print.c-elastic-header:nth-child(5) > div.block:last-child > div.container
+www1.folha.uol.com.br##div:nth-child(3) > header.l-header.u-no-print.c-elastic-header.c-elastic-header--affixed.is-expanded:nth-child(5) > div.l-header__wrapper:nth-child(2) > div.container:first-child > div.c-tools-share.c-tools-share--inner.js-c-tools-share.rs_skip:last-child
+www1.folha.uol.com.br##div:nth-child(3) > div:nth-child(7) > div
+
 ! https://github.com/uBlockOrigin/uAssets/issues/1069
 nerdmaldito.com##+js(ra, onselectstart)
 nerdmaldito.com##+js(aopw, document.onselectstart)
