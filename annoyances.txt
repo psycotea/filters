@@ -2123,7 +2123,9 @@ youtube.com##.no-scroll #page-manager:style(margin-top: 0px !important)
 !#endif
 ! https://github.com/uBlockOrigin/uAssets/issues/5911
 youtube.com##ytd-popup-container > .ytd-popup-container > #contentWrapper > .ytd-popup-container[position-type="OPEN_POPUP_POSITION_BOTTOMLEFT"]
-m.youtube.com###mealbar\:3 > ytm-mealbar.mealbar-promo-renderer
+youtube.com###mealbar\:3 > ytm-mealbar.mealbar-promo-renderer
+youtube.com##+js(set, ytInitialPlayerResponse.auxiliaryUi.messageRenderers.upsellDialogRenderer.isVisible, false)
+youtube.com##+js(set, ytInitialData.topbar.desktopTopbarRenderer.interstitial.consentBumpRenderer.forceConsent, false)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5763
 ! https://redd.it/ffex0g
