@@ -1,6 +1,6 @@
-! Version: 20201709001
+! Version: 20202109001
 ! Title: EasyList filter Brasil
-! Last modified: 17 Sep 2020 07:32 BRT
+! Last modified: 21 Sep 2020 11:32 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -223,6 +223,8 @@ clicknupload.co##+js(acis, Object.defineProperty, XMLHttpRequest)
 |http*://$popup,script,third-party,xmlhttprequest,domain=ucaster.me
 ! abcast.net
 |http*://$popup,script,third-party,xmlhttprequest,domain=abcast.me|abcast.net
+!madeinvilnius
+madeinvilnius.lt##+js(nostif, f.parentNode.removeChild(f), 100)
 ||abcast.net/ao.html
 ! sharecast.eu
 |http*://$popup,script,third-party,xmlhttprequest,domain=sharecast.eu
