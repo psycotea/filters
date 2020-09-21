@@ -1,6 +1,6 @@
-! Version: 20202109003
+! Version: 20202109004
 ! Title: EasyList filter Brasil
-! Last modified: 21 Sep 2020 18:40 BRT
+! Last modified: 21 Sep 2020 19:25 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -68,9 +68,8 @@ phonearena.com##+js(nostif, f.parentNode.removeChild(f), 100)
 !blic ad block detect
 blic.rs##+js(nostif, f.parentNode.removeChild(f), 100)
 !twitter
-||ads-twitter.com^$third-party
-twitter.com##.has-profile-promoted-tweet
 ||www.google-analytics.com/analytics.js$script,domain=twitter.com
+||www.google-analytics.com^$script,domain=twitter.com
 ! https://github.com/uBlockOrigin/uAssets/issues/124
 ||jsuol.com.br/*/detectadblock/$script,important,domain=uol.com.br
 ! https://github.com/uBlockOrigin/uAssets/issues/765
