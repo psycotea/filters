@@ -1,6 +1,6 @@
-! Version: 20202109001
+! Version: 20202209001
 ! Title: EasyList filter Brasil
-! Last modified: 21 Sep 2020 11:32 BRT
+! Last modified: 22 Sep 2020 12:02 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -124,9 +124,11 @@ www.googletagservices.com
 @@||www.google.com/recaptcha/*$frame
 @@||www.gstatic.com/recaptcha/*$script
 @@||www.gstatic.com/recaptcha/*$xhr
-!bing 
-bing.com##.b_ad:style(position: absolute!important; left: -3000px!important;)
-bing.com##^#b_results > .b_ad
+!bing
+bing.com##+js(set-constant, AdBTrack.AdbMon.isBlocked, noopFunc)
+bing.com##+js(set-constant, AdBlockerTracking.AdBlockMonitor, noopFunc)
+bing.com##+js(set-constant, Blob, noopFunc)
+bing.com##.b_ad:remove()
 !super.abril
 |https://super.abril.com.br/wp-content/plugins/abril-plugins/abril-paywall/js/paywall.js?ver=2.0.10
 !quatro rodas 
