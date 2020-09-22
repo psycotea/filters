@@ -32,6 +32,8 @@ clicknupload.co##+js(acis, String.fromCharCode, /'shift'|break;/)
 @@||gdpr-tcfv2.sp-prod.net/wrapperMessagingWithoutDetection.js$script,domain=sport1.de
  @@||googletagmanager.com/gtm.js$script,domain=sport1.de
  @@||sp-prod.net^$xhr,domain=sport1.de
+ google.*###tads
+##.ads-fr
  clk.ink##+js(aopw, adBlockDetected)
  clk.ink##+js(aopw, Fingerprint2)
  clk.ink##+js(noeval)
@@ -66,8 +68,8 @@ phonearena.com##+js(nostif, f.parentNode.removeChild(f), 100)
 !blic ad block detect
 blic.rs##+js(nostif, f.parentNode.removeChild(f), 100)
 !twitter
-||ads-twitter.com^$third-party
-twitter.com##.has-profile-promoted-tweet
+||www.google-analytics.com/analytics.js$script,domain=twitter.com
+||www.google-analytics.com^$script,domain=twitter.com
 ! https://github.com/uBlockOrigin/uAssets/issues/124
 ||jsuol.com.br/*/detectadblock/$script,important,domain=uol.com.br
 ! https://github.com/uBlockOrigin/uAssets/issues/765
