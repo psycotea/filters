@@ -1,6 +1,6 @@
-! Version: 20202209001
+! Version: 20202209003
 ! Title: EasyList filter Brasil
-! Last modified: 22 Sep 2020 12:02 BRT
+! Last modified: 22 Sep 2020 18:22 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -75,6 +75,7 @@ blic.rs##+js(nostif, f.parentNode.removeChild(f), 100)
 ! https://github.com/uBlockOrigin/uAssets/issues/765
 www.uol##.content-lightbox
 www.uol##.overlay-lightbox
+olimpiadas.uol.com.br##+js(aopw, detectingAdblocks)
 uol.com.br##.banner
 uol.com.br##.bg-banner
 uol.com.br##[id^="banner-300x250"]:remove()
@@ -127,10 +128,20 @@ www.googletagservices.com
 @@||www.gstatic.com/recaptcha/*$script
 @@||www.gstatic.com/recaptcha/*$xhr
 !bing
-bing.com##+js(set-constant, AdBTrack.AdbMon.isBlocked, noopFunc)
-bing.com##+js(set-constant, AdBlockerTracking.AdBlockMonitor, noopFunc)
-bing.com##+js(set-constant, Blob, noopFunc)
+bing.com##[onclick^="ad_choice"]:upward(3)
+bing.com###b_results > li[style]:not([class])
+bing.com##.b_algo:has(p:matches-css-before(content: "Ad"))
+bing.com##+js(set, Blob, noopFunc)
+bing.com##+js(set, AdBlockerTracking.AdBlockMonitor, noopFunc)
+bing.com##+js(set, AdBTrack.AdbMon.isBlocked, noopFunc)
+bing.com##.productAd
 bing.com##.b_ad:remove()
+bing.com##.b_ad:style(position: absolute !important; left: -3000px !important;)
+bing.com#@#.b_ad
+bing.com#@##b_results > li:not(.b_algo):not(.b_ans):not(.b_pag):not(.aca_algo):not(.aca_algo_count):not(.b_msg)
+bing.com#@#a[h$=",Ads"]
+bing.com#@#li.b_adBottom
+bing.com#@#.b_adLastChild
 !super.abril
 |https://super.abril.com.br/wp-content/plugins/abril-plugins/abril-paywall/js/paywall.js?ver=2.0.10
 !quatro rodas 
@@ -190,9 +201,7 @@ clicknupload.co##+js(acis, Object.defineProperty, XMLHttpRequest)
  ||mail.ru^$replace=/broker:/_broker:/
 !twitter
 @@||ads.twitter.com/favicon.ico
-@@||static.ads-twitter.com/oct.js$domain=boston.com|calgaryherald.com|calgarysun.com|celebuzz.com|infinitiev.com|montrealgazette.com|saveur.com
-twitter.com##[data-testid="trend"]:has-text(/推荐|Promoted|Gesponsert|Реклама|Promocionado|Sponsorisé|Uitgelicht|プロモーション/):upward(1)
-twitter.com##:xpath(//span[(text()='Promoted' or text()='Gesponsert' or text()='Promocionado' or text()='Sponsorisé' or text()='Uitgelicht' or text()='推荐' or text()='プロモーション')]/../../../../..)
+@@||static.ads-twitter.com/oct.js$domain=boston.com|calgaryherald.com|calgarysun.com|celebuzz.com|infinitiev
 ! flashx
 /atrk.gif$domain=flashx.co|flashx.tv|flashx1.tv
 /checkembed.php^$domain=flashx.co|flashx.tv|flashx1.tv
