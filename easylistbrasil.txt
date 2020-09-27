@@ -1,6 +1,6 @@
 ! Version: 20202209003
 ! Title: EasyList filter Brasil
-! Last modified: 22 Sep 2020 18:22 BRT
+! Last modified: 27 Sep 2020 10:22 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -127,7 +127,6 @@ www.googletagservices.com
 @@||www.google.com/recaptcha/*$frame
 @@||www.gstatic.com/recaptcha/*$script
 @@||www.gstatic.com/recaptcha/*$xhr
-!bing
 bing.com##[onclick^="ad_choice"]:upward(3)
 bing.com###b_results > li[style]:not([class])
 bing.com##.b_algo:has(p:matches-css-before(content: "Ad"))
@@ -552,8 +551,6 @@ $csp=script-src 'self',domain=mirrorace.com
 ! ||nytimes.com/vi-assets/static-assets/vendor-*.js
 ! netfilmeshd.online
 ||raw.githubusercontent.com/diegocsandrim/sharp-test/master/output1.png
-! speedtest.net
-$script,domain=speedtest.net
 ! megafilmes.co
 |http*://$popup,script,third-party,websocket,xmlhttprequest,domain=megafilmes.co
 ! mp3-youtube.download
