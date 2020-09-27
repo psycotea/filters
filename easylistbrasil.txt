@@ -1,6 +1,6 @@
-! Version: 20202709001
+! Version: 20202709002
 ! Title: EasyList filter Brasil
-! Last modified: 27 Sep 2020 16:25 BRT
+! Last modified: 27 Sep 2020 20:56 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -48,6 +48,7 @@ clk.*##+js(aopr, document.head.appendChild)
 reddit.com##.awarding-link[data-award-id^="award_"]
 reddit.com##h2:has-text(/^Updates from reddit$/):upward(1)
 reddit.com##h3:has-text(/^Top broadcast right now$/):upward(7)
+reddit.com##h2:has-text(/^Trending Communities$/):upward(6)
 ! https://www.reddit.com/r/uBlockOrigin/comments/7l54xr/metro_copyjacking_filter/
 metro.co.uk##+js(aeld, copy, BLACKLIST)
 folhaonline.es##.fl-col-has-cols > div[class="fl-col-content fl-node-content"] > div.fl-col-group-align-center.fl-col-group-custom-width
