@@ -34,14 +34,20 @@ clicknupload.co##+js(acis, String.fromCharCode, /'shift'|break;/)
  @@||sp-prod.net^$xhr,domain=sport1.de
  google.*###tads
 ##.ads-fr
- clk.ink##+js(aopw, adBlockDetected)
- clk.ink##+js(aopw, Fingerprint2)
- clk.ink##+js(noeval)
- clk.ink##+js(set, blurred, false)
- clk.ink##[data-captcha-enable="true"]
- clk.ink##[src^="/ads/"]
- clk.*##+js(aopr, document.head.appendChild)
- ||clk.ink/sw.js$script,1p
+clk.ink##+js(aopw, adBlockDetected)
+clk.ink##+js(aopw, Fingerprint2)
+clk.ink##+js(noeval)
+clk.ink##+js(set, blurred, false)
+clk.ink##[data-captcha-enable="true"]
+clk.ink##[src^="/ads/"]
+clk.*##+js(aopr, document.head.appendChild)
+||clk.ink/sw.js$script,1p
+ !reddit.com
+||gql.reddit.com^$badfilter
+||gql.reddit.com^$domain=~new.reddit.com|~www.reddit.com
+reddit.com##.awarding-link[data-award-id^="award_"]
+reddit.com##h2:has-text(/^Updates from reddit$/):upward(1)
+reddit.com##h3:has-text(/^Top broadcast right now$/):upward(7)
 ! https://www.reddit.com/r/uBlockOrigin/comments/7l54xr/metro_copyjacking_filter/
 metro.co.uk##+js(aeld, copy, BLACKLIST)
 folhaonline.es##.fl-col-has-cols > div[class="fl-col-content fl-node-content"] > div.fl-col-group-align-center.fl-col-group-custom-width
