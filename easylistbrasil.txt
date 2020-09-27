@@ -1,6 +1,6 @@
-! Version: 20202209003
+! Version: 20202709001
 ! Title: EasyList filter Brasil
-! Last modified: 27 Sep 2020 10:22 BRT
+! Last modified: 27 Sep 2020 16:25 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -174,9 +174,6 @@ infomoney.com.br##+js(abort-on-property-read.js, addLink)
 !twitch.com
 twitch.tv##.tw-z-above.tw-relative.tw-full-width.tw-c-text-base.blue-bar
 twitch.tv##[class^="prime-offers__pill"]
-www.twitch.tv##.tw-relative.tw-justify-content-center.tw-flex.tw-align-items-center.featured-content-carousel
-www.twitch.tv##.tw-pd-x-3.tw-pd-t-2.front-page-carousel
-twitch.tv##.front-page-carousel:remove()
 !uploadfiles
 uploadfiles.pw##+js(acis, decodeURI, decodeURIComponent)
 !clicknupload
@@ -817,29 +814,6 @@ auto.mail.ru##.box__block.box__block_main
 ##.icon-player-backscreen_video_vk_share_60x60
 sport.mail.ru##.likeframes
 ##.mfv_smsTop
-my.mail.ru##.mm_right_block.mm_right_block_content.mm_right_block__sm
-mail.ru##.mm_right_block[data-clns="d916318"]
-mail.ru##.mm_right_block[data-clns="d916473"]
-my.mail.ru##.mm_right_block_footer
-##.notif__marketing.notif__marketing-new-groups
-news.mail.ru##.promo-raketa
-mail.ru##.s-chart-shares
-mail.ru##.s-sharelist
-mail.ru##.sharelist__items
-auto.mail.ru##.sharelist_justify
-mail.ru##.slot_left
-mail.ru##:not([class*="teaser__preview"]):not([class*="article-embed"]) > .twitter-tweet
-mail.ru##aside[class*="twitter"]:not([class*="teaser_incontent"])
-mail.ru##div[class*="toolbar"]
-my.mail.ru##div[class="groups-list__promo"]
-my.mail.ru##div[class="mf_smsTop mf_ohd"]
-my.mail.ru##div[class="mm_right_block mm_right_block_reklama"]
-##div[class="mm_right_block_content mm_right_block__sm"]
-my.mail.ru##div[class="mm_right_block_content.mm_right_block__sm"]
-my.mail.ru##div[data-clns="d676453"]
-lady.mail.ru##div[data-module="Shares.Compact"]
-my.mail.ru##div[id="app-banners"][class="b-app-list"]
-my.mail.ru##h2[class="mm_right_block_title"]
 ! vidoza.net
 vidoza.net##div[class$="verlay"]
 vidoza.net##div[class="btn-group btn-block"]
