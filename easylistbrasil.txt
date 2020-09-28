@@ -1,6 +1,6 @@
-! Version: 20202709002
+! Version: 20202709003
 ! Title: EasyList filter Brasil
-! Last modified: 27 Sep 2020 20:56 BRT
+! Last modified: 27 Sep 2020 21:09 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -45,10 +45,20 @@ clk.*##+js(aopr, document.head.appendChild)
  !reddit.com
 ||gql.reddit.com^$badfilter
 ||gql.reddit.com^$domain=~new.reddit.com|~www.reddit.com
-reddit.com##.awarding-link[data-award-id^="award_"]
 reddit.com##h2:has-text(/^Updates from reddit$/):upward(1)
 reddit.com##h3:has-text(/^Top broadcast right now$/):upward(7)
 reddit.com##h2:has-text(/^Trending Communities$/):upward(6)
+||preview.redd.it/award_images/*$image
+||www.redditstatic.com/gold/awards/icon/Fireworks_48.png$image
+||www.redditstatic.com/gold/awards/icon/gold_48.png$image
+www.reddit.com##.RES-keyNav-activeElement.res-selected.unvoted.entry > .top-matter > .tagline > .awardings-bar
+www.reddit.com###thing_t3_i0x2pd > .unvoted.entry > .top-matter > .tagline > .awardings-bar
+www.reddit.com##.awardings-bar
+www.reddit.com###thing_t3_i21npo > .unvoted.entry > .top-matter > .tagline > .awardings-bar
+www.reddit.com###thing_t3_i1xauc > .unvoted.entry > .top-matter > .tagline > .awardings-bar
+reddit.com##.awardings-bar
+||redditstatic.com/gold/awards/icon/*
+
 ! https://www.reddit.com/r/uBlockOrigin/comments/7l54xr/metro_copyjacking_filter/
 metro.co.uk##+js(aeld, copy, BLACKLIST)
 folhaonline.es##.fl-col-has-cols > div[class="fl-col-content fl-node-content"] > div.fl-col-group-align-center.fl-col-group-custom-width
