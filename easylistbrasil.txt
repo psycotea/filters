@@ -75,9 +75,6 @@ phonearena.com##+js(nostif, f.parentNode.removeChild(f), 100)
 ||paywall.folha.uol.com.br/wall.jsonp?callback=paywall.inicio$domain=blogfolha.uol.com.br|educacao.uol.com.br|folha.uol.com.br
 !blic ad block detect
 blic.rs##+js(nostif, f.parentNode.removeChild(f), 100)
-!twitter
-||www.google-analytics.com/analytics.js$script,domain=twitter.com
-||www.google-analytics.com^$script,domain=twitter.com
 ! https://github.com/uBlockOrigin/uAssets/issues/124
 ||jsuol.com.br/*/detectadblock/$script,important,domain=uol.com.br
 ! https://github.com/uBlockOrigin/uAssets/issues/765
@@ -189,23 +186,6 @@ clicknupload.co##+js(acis, Object.defineProperty, XMLHttpRequest)
  clicknupload.co##+js(aopw, _pop)
 ! mail.ru
 ||ad.mail.ru/crossdomain.xml
-||boom.mail.ru^
-||connect.mail.ru/share?
-||imgsmail.ru/*_share_buttons_sprite.$third-party
-||km.ru^*/km_shares/
-||mail.ru/cookie-token.do?
-||mail.ru/count/
-||mail.ru/counter/
-||mail.ru/dstat?
-||mail.ru/js/social-likes.
-||mail.ru/share_count?
-||mail.ru^*/jquery.shares.
-||webagent.mail.ru^
-||mail.ru/*/fast-slot.js$replace=/&&t.mimic.setup.broker//
- ||mail.ru^$replace=/broker:/_broker:/
-!twitter
-@@||ads.twitter.com/favicon.ico
-@@||static.ads-twitter.com/oct.js$domain=boston.com|calgaryherald.com|calgarysun.com|celebuzz.com|infinitiev
 ! flashx
 /atrk.gif$domain=flashx.co|flashx.tv|flashx1.tv
 /checkembed.php^$domain=flashx.co|flashx.tv|flashx1.tv
