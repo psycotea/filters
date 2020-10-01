@@ -1,6 +1,6 @@
-! Version: 20202809003
+! Version: 20203009001
 ! Title: EasyList filter Brasil
-! Last modified: 28 Sep 2020 12:47 BRT
+! Last modified: 30 Sep 2020 21:39 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -166,6 +166,7 @@ youtube.*##.ytd-rich-grid-renderer :has(.ytd-rich-item-renderer:has(.ytd-display
 youtube.*##ytd-display-ad-renderer
 ||youtube.com^*/endscreen.js$script
 ||youtube.com^*/annotations_module.js$script
+youtube.com##ytd-shelf-renderer:has-text(For you)
 !knowyourmeme.com
 knowyourmeme.com##div.combo-wrapper
 ! openload.co
