@@ -1,0 +1,177 @@
+! Version: 20200210001
+! Title: EasyBrasil Simplificado
+! Last modified: 02 Oct 2020 09:44 BRT
+! Expires: 04 days (update frequency)
+! Description: filters for general blocking
+! Homepage: https://github.com/Sam5883/filters
+! Licence: https://creativecommons.org/licenses/by-sa/4.0/
+! Github issues: https://github.com/Sam5883/filters/issues
+! GitHub pull requests: https://github.com/Sam5883/filters/pulls
+!
+!-----------------------Filtros de bloqueio de anúncios-----------------------!
+!novo domain globo ad block detect
+||tinypass.com^$domain=oglobo.globo.com|epoca.globo.com|revistagalileu.globo.com
+blogs.oglobo.globo.com###pub-fullbanner-1
+blogs.oglobo.globo.com###pub-box-materia
+oglobo.globo.com##.block__subpane--advertising.block__subpane
+!clicknupload
+clicknupload.co##+js(acis, String.fromCharCode, /'shift'|break;/)
+*$script,3p,denyallow=bootstrapcdn.com|disqus.com|jsdelivr.net|jwpcdn.com|fastly.net|fastlylb.net|jquery.com|hwcdn.net|recaptcha.net|cloudflare.com|cloudflare.net|google.com|googleapis.com|gstatic.com|facebook.net,domain=extramovies.*
+@@||gdpr-tcfv2.sp-prod.net/wrapperMessagingWithoutDetection.js$script,domain=sport1.de
+ @@||googletagmanager.com/gtm.js$script,domain=sport1.de
+ @@||sp-prod.net^$xhr,domain=sport1.de
+ google.*###tads
+##.ads-fr
+clk.ink##+js(aopw, adBlockDetected)
+clk.ink##+js(aopw, Fingerprint2)
+clk.ink##+js(noeval)
+clk.ink##+js(set, blurred, false)
+clk.ink##[data-captcha-enable="true"]
+clk.ink##[src^="/ads/"]
+clk.*##+js(aopr, document.head.appendChild)
+||clk.ink/sw.js$script,1p
+ !reddit.com
+||gql.reddit.com^$badfilter
+reddit.com##h2:has-text(/^Trending Communities$/):upward(6)
+reddit.com##.awardings-bar
+! https://www.reddit.com/r/uBlockOrigin/comments/7l54xr/metro_copyjacking_filter/
+metro.co.uk##+js(aeld, copy, BLACKLIST)
+folhaonline.es##.fl-col-has-cols > div[class="fl-col-content fl-node-content"] > div.fl-col-group-align-center.fl-col-group-custom-width
+!folha.uol
+www1.folha.uol.com.br##div:nth-child(3) > header.l-header.u-no-print.c-elastic-header:nth-child(5) > div.block:last-child > div.container
+www1.folha.uol.com.br##div:nth-child(3) > header.l-header.u-no-print.c-elastic-header.c-elastic-header--affixed.is-expanded:nth-child(5) > div.l-header__wrapper:nth-child(2) > div.container:first-child > div.c-tools-share.c-tools-share--inner.js-c-tools-share.rs_skip:last-child
+www1.folha.uol.com.br##div:nth-child(3) > div:nth-child(7) > div
+||pushanert.com^$third-party
+||pushalert.co^$third-party
+||pushnews.eu^$third-party
+||cdn.pn.vg^$third-party
+@@||www.googletagmanager.com/gtag/js$script,domain=eneldistribuicaosp.com.br
+||conteudo.jsuol.com.br/p/perfil/js/widgetNotify.v3.js$xhr,domain=uol.com.br,important
+@@||hcaptcha.com
+twitch.tv##.tw-z-above.tw-relative.tw-full-width.tw-c-text-base.blue-bar
+! dicionariocriativo.com.br anti-adblock messages
+dicionariocriativo.com.br##.usingblock
+! https://github.com/jspenguin2017/uBlockProtector/issues/968
+iosgods.com##+js(aopw, CheckAdLoad)
+! https://github.com/uBlockOrigin/uAssets/issues/1069
+nerdmaldito.com##+js(ra, onselectstart)
+nerdmaldito.com##+js(aopw, document.onselectstart)
+!phonearena
+phonearena.com##+js(nostif, f.parentNode.removeChild(f), 100)
+!folha and uol
+! https://github.com/uBlockOrigin/uAssets/issues/66
+||paywall.folha.uol.com.br/wall.jsonp?callback=paywall.inicio$domain=blogfolha.uol.com.br|educacao.uol.com.br|folha.uol.com.br
+!blic ad block detect
+blic.rs##+js(nostif, f.parentNode.removeChild(f), 100)
+! https://github.com/uBlockOrigin/uAssets/issues/124
+||jsuol.com.br/*/detectadblock/$script,important,domain=uol.com.br
+! https://github.com/uBlockOrigin/uAssets/issues/765
+www.uol##.content-lightbox
+www.uol##.overlay-lightbox
+olimpiadas.uol.com.br##+js(aopw, detectingAdblocks)
+uol.com.br##.banner
+uol.com.br##.bg-banner
+uol.com.br##[id^="banner-300x250"]:remove()
+||paywall.folha.uol.com.br/*
+||static.folha.uol.com.br/paywall/*
+@@||paywall.folha.uol.com.br/status.php^$document
+folha.uol.com.br##bt-read-more-content
+folha.uol.com.br##.c-push-notification
+! Estadão - https://estadao.com.br
+||*.estadao.com.br/paywall/*
+||estadao.com.br/estadao/js/modules/navegg*$script
+||estadao.com.br/web-push/modal-naoassinante$xmlhttprequest,first-party
+@@/s2016/portal/js/advertisement.js$script,domain=estadao.com.br,important
+www.estadao.com.br##.assine-bar
+!infoglobo
+||*.infoglobo.com.br/*private-browsing*
+||*.infoglobo.com.br/paywall*
+||ogjs.infoglobo.com.br/*autenticacao*
+!npttech
+npttech.com/advertising.js *fuckadblock.js
+!imgur
+imgur.com##+js(set, usesABP, false)
+! Spotify Ads Blocker
+ads.pubmatic.com
+gads.pubmatic.com
+pubads.g.doubleclick.net
+securepubads.g.doubleclick.net
+www.googletagservices.com
+||cloudfront.net/mp3-ad
+||adeventtracker.spotify.com
+/mp3-ad/*$domain=open.spotify.com
+@@||spclient.wg.spotify.com/connect-api/v2/from/*$xmlhttprequest,domain=open.spotify.com
+@@||spclient.wg.spotify.com/connect-api$xmlhttprequest,domain=open.spotify.com
+*cloudfront.net/mp3-ad/*
+@@||spclient.wg.spotify.com/connect-api$xmlhttprequest,domain=open.spotify.com
+/mp3-ad/*
+||audio-fa.scdn.co/audio/*$media,redirect=noopmp3-0.1s,domain=open.spotify.com
+!readspeaker
+||*.readspeaker.com/*
+||f1-na.readspeaker.com/*
+!sharpen.design
+@@||sharpen.design^script,xhr,1p
+!google recaptcha
+@@||www.google.com/recaptcha/*$css
+@@||www.google.com/recaptcha/*$image
+@@||www.google.com/recaptcha/*$media
+@@||www.google.com/recaptcha/*$script
+@@||www.google.com/recaptcha/*$xhr
+@@||www.google.com/recaptcha/*$frame
+@@||www.gstatic.com/recaptcha/*$script
+@@||www.gstatic.com/recaptcha/*$xhr
+bing.com##[onclick^="ad_choice"]:upward(3)
+bing.com###b_results > li[style]:not([class])
+bing.com##.b_algo:has(p:matches-css-before(content: "Ad"))
+bing.com##+js(set, Blob, noopFunc)
+bing.com##+js(set, AdBlockerTracking.AdBlockMonitor, noopFunc)
+bing.com##+js(set, AdBTrack.AdbMon.isBlocked, noopFunc)
+bing.com##.productAd
+bing.com##.b_ad:remove()
+bing.com##.b_ad:style(position: absolute !important; left: -3000px !important;)
+bing.com#@#.b_ad
+bing.com#@##b_results > li:not(.b_algo):not(.b_ans):not(.b_pag):not(.aca_algo):not(.aca_algo_count):not(.b_msg)
+bing.com#@#a[h$=",Ads"]
+bing.com#@#li.b_adBottom
+bing.com#@#.b_adLastChild
+!super.abril
+|https://super.abril.com.br/wp-content/plugins/abril-plugins/abril-paywall/js/paywall.js?ver=2.0.10
+!quatro rodas
+|https://quatrorodas.abril.com.br/wp-content/plugins/abril-plugins/abril-paywall/js/paywall.js?ver=2.0.10
+!gazeta do povo
+||gazetadopovo.com.br/public/_css/paywall.css*$stylesheet
+gazetadopovo.com.br##.c-assine-container
+!youtube.com
+||youtube.com/*/base.js$replace=/(playerResponse.adPlacements|playerResponse.playerAds)/_ad/
+||youtube.com/*/base.js$replace=/(playerAds|adPlacement[a-zA-Z]+)/_da/
+youtube.com#%#//scriptlet("json-prune", "playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds")
+youtube.com#%#//scriptlet("set-constant", "ytInitialPlayerResponse.adPlacements", "undefined")
+@@||youtube.com/get_video_info
+youtube.com##ytd-primetime-promo-renderer
+youtube.com###dismissable:has-text(Free with Ads)
+##ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(1)
+youtube.*##.ytd-rich-grid-renderer :has(.ytd-rich-item-renderer:has(.ytd-display-ad-renderer))
+youtube.*##ytd-display-ad-renderer
+||youtube.com^*/endscreen.js$script
+||youtube.com^*/annotations_module.js$script
+!knowyourmeme.com
+knowyourmeme.com##div.combo-wrapper
+! openload.co
+!ytmp3
+ytmp3.cc###ad
+!tecmundo ad detect
+tecmundo.com.br##.fc-ab-root
+tecmundo.com.br##.tec--ad
+!infomoney
+infomoney.com.br##+js(abort-on-property-read.js, addLink)
+!twitch.com
+twitch.tv##.tw-z-above.tw-relative.tw-full-width.tw-c-text-base.blue-bar
+twitch.tv##[class^="prime-offers__pill"]
+!uploadfiles
+uploadfiles.pw##+js(acis, decodeURI, decodeURIComponent)
+!clicknupload
+clicknupload.co##+js(acis, Object.defineProperty, XMLHttpRequest)
+ clicknupload.co##+js(aopw, _pop)
+ ! mail.ru
+||ad.mail.ru/crossdomain.xml
+||video-weaver.*.hls.ttvnw.net/v*/playlist/*.m3u8$replace=/#EXT-X-DATERANGE:ID="stitched-ad[\s\S]*(#EXT-X-PROGRAM-DATE-TIME)(?![\s\S]*?#EXTINF:\d\.\d+\,live)[\s\S]*|(#EXT-X-DATERANGE:ID="stitched-ad[\s\S]*?(#EXT-X-PROGRAM-DATE-TIME)([\s\S]*?(#EXTINF:\d\.\d+\,live)))/\$5/
