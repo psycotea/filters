@@ -1,6 +1,6 @@
-! Version: 20202809003
+! Version: 20203009002
 ! Title: EasyList filter Brasil
-! Last modified: 28 Sep 2020 12:47 BRT
+! Last modified: 30 Sep 2020 22:12 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -132,20 +132,9 @@ www.googletagservices.com
 @@||www.google.com/recaptcha/*$frame
 @@||www.gstatic.com/recaptcha/*$script
 @@||www.gstatic.com/recaptcha/*$xhr
-bing.com##[onclick^="ad_choice"]:upward(3)
-bing.com###b_results > li[style]:not([class])
-bing.com##.b_algo:has(p:matches-css-before(content: "Ad"))
 bing.com##+js(set, Blob, noopFunc)
 bing.com##+js(set, AdBlockerTracking.AdBlockMonitor, noopFunc)
 bing.com##+js(set, AdBTrack.AdbMon.isBlocked, noopFunc)
-bing.com##.productAd
-bing.com##.b_ad:remove()
-bing.com##.b_ad:style(position: absolute !important; left: -3000px !important;)
-bing.com#@#.b_ad
-bing.com#@##b_results > li:not(.b_algo):not(.b_ans):not(.b_pag):not(.aca_algo):not(.aca_algo_count):not(.b_msg)
-bing.com#@#a[h$=",Ads"]
-bing.com#@#li.b_adBottom
-bing.com#@#.b_adLastChild
 !super.abril
 |https://super.abril.com.br/wp-content/plugins/abril-plugins/abril-paywall/js/paywall.js?ver=2.0.10
 !quatro rodas 
@@ -160,12 +149,10 @@ youtube.com#%#//scriptlet("json-prune", "playerResponse.adPlacements playerRespo
 youtube.com#%#//scriptlet("set-constant", "ytInitialPlayerResponse.adPlacements", "undefined")
 @@||youtube.com/get_video_info
 youtube.com##ytd-primetime-promo-renderer
-youtube.com###dismissable:has-text(Free with Ads)
 ##ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(1)
 youtube.*##.ytd-rich-grid-renderer :has(.ytd-rich-item-renderer:has(.ytd-display-ad-renderer))
-youtube.*##ytd-display-ad-renderer
-||youtube.com^*/endscreen.js$script
-||youtube.com^*/annotations_module.js$script
+youtube.com##ytd-shelf-renderer:has-text(Para você)
+youtube.com##ytd-rich-section-renderer:has-text(Postagens mais recentes do YouTube)
 !knowyourmeme.com
 knowyourmeme.com##div.combo-wrapper
 ! openload.co
