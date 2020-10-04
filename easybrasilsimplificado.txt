@@ -1,6 +1,6 @@
-! Version: 20200310001
+! Version: 20200310002
 ! Title: EasyBrasil Simplificado
-! Last modified: 03 Oct 2020 21:19 BRT
+! Last modified: 03 Oct 2020 21:27 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -35,7 +35,6 @@ clk.*##+js(aopr, document.head.appendChild)
 reddit.com##h2:has-text(/^Trending Communities$/):upward(6)
 reddit.com##.awardings-bar
 !twitter.com
-twitter.com##div[class="css-1dbjc4n r-1igl3o0 r-qklmqi r-1adg3ll r-1ny4l3l"]
 ! https://www.reddit.com/r/uBlockOrigin/comments/7l54xr/metro_copyjacking_filter/
 metro.co.uk##+js(aeld, copy, BLACKLIST)
 folhaonline.es##.fl-col-has-cols > div[class="fl-col-content fl-node-content"] > div.fl-col-group-align-center.fl-col-group-custom-width
