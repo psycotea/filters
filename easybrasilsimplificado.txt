@@ -1,6 +1,6 @@
-! Version: 20200410001
+! Version: 20200410002
 ! Title: EasyBrasil Simplificado
-! Last modified: 04 Oct 2020 15:27 BRT
+! Last modified: 04 Oct 2020 17:36 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -165,6 +165,9 @@ ytmp3.cc###ad
 !tecmundo ad detect
 tecmundo.com.br##.fc-ab-root
 tecmundo.com.br##.tec--ad
+!letras.mus.br
+www.letras.mus.br##.modalLGPD
+www.letras.mus.br###js-lyric-cnt > .cnt-space-top
 !infomoney
 infomoney.com.br##+js(abort-on-property-read.js, addLink)
 !twitch.com
