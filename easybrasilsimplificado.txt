@@ -1,6 +1,6 @@
-! Version: 20200510001
+! Version: 20200510002
 ! Title: EasyBrasil Simplificado
-! Last modified: 05 Oct 2020 12:49 BRT
+! Last modified: 05 Oct 2020 13:10 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -85,6 +85,7 @@ folha.uol.com.br##.c-push-notification
 @@/s2016/portal/js/advertisement.js$script,domain=estadao.com.br,important
 estadao.com.br##.assine-bar
 estadao.com.br##div[class="line-leia"]
+estadao.com.br###snippet-16 > div.snippet-wrapper
 !infoglobo
 ||*.infoglobo.com.br/*private-browsing*
 ||*.infoglobo.com.br/paywall*
