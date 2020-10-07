@@ -137,6 +137,10 @@ bing.com#@##b_results > li:not(.b_algo):not(.b_ans):not(.b_pag):not(.aca_algo):n
 bing.com#@#a[h$=",Ads"]
 bing.com#@#li.b_adBottom
 bing.com#@#.b_adLastChild
+!businessinsider
+businessinsider.de##+js(nostif, .call(null), 10)
+businessinsider.de##^script:has-text(Inject=!)
+||npttech.com/advertising.js$script,important
 !super.abril
 |https://super.abril.com.br/wp-content/plugins/abril-plugins/abril-paywall/js/paywall.js?ver=2.0.10
 !quatro rodas
