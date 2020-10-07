@@ -82,10 +82,8 @@ folha.uol.com.br##.c-push-notification
 ||*.estadao.com.br/paywall/*
 ||estadao.com.br/estadao/js/modules/navegg*$script
 ||estadao.com.br/web-push/modal-naoassinante$xmlhttprequest,first-party
-@@/s2016/portal/js/advertisement.js$script,domain=estadao.com.br,important
 estadao.com.br##.assine-bar
 estadao.com.br##div[class="line-leia"]
-estadao.com.br###snippet-16 > div.snippet-wrapper
 !infoglobo
 ||*.infoglobo.com.br/*private-browsing*
 ||*.infoglobo.com.br/paywall*
