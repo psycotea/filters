@@ -115,6 +115,14 @@ www.googletagservices.com
 @@||spclient.wg.spotify.com/connect-api$xmlhttprequest,domain=open.spotify.com
 /mp3-ad/*
 ||audio-fa.scdn.co/audio/*$media,redirect=noopmp3-0.1s,domain=open.spotify.com
+||cloudfront.net/mp3-ad
+||adeventtracker.spotify.com
+||adeventtracker.spotify.com^
+||audio-fa.scdn.co/audio/$media,domain=open.spotify.com|play.spotify.com
+||audio-fa.scdn.co/audio/*$media,redirect=noopmp3-0.1s,domain=open.spotify.com
+||audio-akp-spotify-com.akamaized.net/audio/*$media,redirect=noopmp3-0.1s,domain=open.spotify.com
+@@||open.spotify.com^$cname
+://ads.$domain=~ads.spotify.com
 !readspeaker
 ||*.readspeaker.com/*
 ||f1-na.readspeaker.com/*
