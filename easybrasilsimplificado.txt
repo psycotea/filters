@@ -1,6 +1,6 @@
-! Version: 20200910002
+! Version: 20201910001
 ! Title: EasyBrasil Simplificado
-! Last modified: 09 Oct 2020 21:34 BRT
+! Last modified: 19 Oct 2020 07:26 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -93,6 +93,11 @@ estadao.com.br###snippet-16 > div.snippet-wrapper
 ||ogjs.infoglobo.com.br/*autenticacao*
 !npttech
 npttech.com/advertising.js *fuckadblock.js
+!fgp
+@@||fangraphs.com/dfp.js$script,1p
+fangraphs.com##.catchall728
+! kissanime. nz scammy 3p scripts
+ kissanime.*##+js(acis, String.fromCharCode, btoa)
 !imgur
 imgur.com##+js(set, usesABP, false)
 ! Spotify Ads Blocker
