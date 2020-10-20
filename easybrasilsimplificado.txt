@@ -1,6 +1,6 @@
-! Version: 20201910001
+! Version: 20202010001
 ! Title: EasyBrasil Simplificado
-! Last modified: 19 Oct 2020 07:26 BRT
+! Last modified: 20 Oct 2020 20:10 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -123,6 +123,8 @@ www.googletagservices.com
 ||audio-akp-spotify-com.akamaized.net/audio/*$media,redirect=noopmp3-0.1s,domain=open.spotify.com
 @@||open.spotify.com^$cname
 ://ads.$domain=~ads.spotify.com
+!yahoo
+||yahoo.com###guce-inline-consent-iframe
 !readspeaker
 ||*.readspeaker.com/*
 ||f1-na.readspeaker.com/*
