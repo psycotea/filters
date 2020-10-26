@@ -1,6 +1,6 @@
-! Version: 20202010001
+! Version: 20202610001
 ! Title: EasyBrasil Simplificado
-! Last modified: 20 Oct 2020 20:10 BRT
+! Last modified: 26 Oct 2020 20:50 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -35,7 +35,7 @@ clk.*##+js(aopr, document.head.appendChild)
 reddit.com##h2:has-text(/^Trending Communities$/):upward(6)
 reddit.com##.awardings-bar
 !twitter.com
-twitter.com###div.css-1dbjc4n r-aqfbo4 r-1p0dtai r-1d2f490 r-12vffkv r-1xcajam r-zchlnj
+twitter.com###div.css-1dbjc4n r-173mn98 r-kemksi r-c67a83 r-1qk6wnv r-qo02w8 r-1mf7evn r-hvns9x r-1jte41z
 ! https://www.reddit.com/r/uBlockOrigin/comments/7l54xr/metro_copyjacking_filter/
 metro.co.uk##+js(aeld, copy, BLACKLIST)
 folhaonline.es##.fl-col-has-cols > div[class="fl-col-content fl-node-content"] > div.fl-col-group-align-center.fl-col-group-custom-width
@@ -165,11 +165,6 @@ businessinsider.de##^script:has-text(Inject=!)
 ||gazetadopovo.com.br/public/_css/paywall.css*$stylesheet
 gazetadopovo.com.br##.c-assine-container
 !youtube.com
-##ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(1)
-youtube.*##.ytd-rich-grid-renderer :has(.ytd-rich-item-renderer:has(.ytd-display-ad-renderer))
-youtube.*##ytd-display-ad-renderer
-||youtube.com^*/endscreen.js$script
-||youtube.com^*/annotations_module.js$script
 youtube.com##ytd-shelf-renderer:has-text(Para você)
 youtube.com##ytd-rich-section-renderer:has-text(Postagens mais recentes do YouTube)
 youtube.com##ytd-shelf-renderer:has-text(Assistir novamente)
