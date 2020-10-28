@@ -87,10 +87,14 @@ estadao.com.br##.assine-bar
 estadao.com.br##div[class="line-leia"]
 estadao.com.br###snippet-16 > div.snippet-wrapper
 @@/s2016/portal/js/advertisement.js$script,domain=estadao.com.br,important
-!infoglobo
+!globo
 ||*.infoglobo.com.br/*private-browsing*
 ||*.infoglobo.com.br/paywall*
 ||ogjs.infoglobo.com.br/*autenticacao*
+||revistapegn.globo.com##.ad-fixed.animated.container-adv
+##div[class^="cookie-banner"]
+globo.com##+js(no-setTimeout-if, f.parentNode.removeChild(f), 100)
+globo.com##+js(addEventListener-defuser, copy)
 !npttech
 npttech.com/advertising.js *fuckadblock.js
 !fgp
