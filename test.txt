@@ -1,5 +1,8 @@
+! Title: test
+! Last modified: 26 Oct 2020 20:50 BRT
+! Expires: 04 days (update frequency)
+! Description: test purposes 
 ||webbrowsertools.com#%#function setUserAgent(window, userAgent) {
-    // Works on Firefox, Chrome, Opera and IE9+
     if (navigator.__defineGetter__) {
         navigator.__defineGetter__('userAgent', function () {
             return userAgent;
