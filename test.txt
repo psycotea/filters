@@ -1,0 +1,15 @@
+||webbrowsertools.com#%#function setUserAgent(window, userAgent) {
+    // Works on Firefox, Chrome, Opera and IE9+
+    if (navigator.__defineGetter__) {
+        navigator.__defineGetter__('userAgent', function () {
+            return userAgent;
+        });
+    } else if (Object.defineProperty) {
+        Object.defineProperty(navigator, 'userAgent', {
+            get: function () {
+                return userAgent;
+            }
+        });
+    }
+
+||webbrowsertools.com^$ua-parser,third-party,domain=unpkg.com
