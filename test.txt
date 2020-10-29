@@ -1,0 +1,18 @@
+! Title: test
+! Last modified: 26 Oct 2020 20:50 BRT
+! Expires: 04 days (update frequency)
+! Description: test purposes 
+||webbrowsertools.com#%#function setUserAgent(window, userAgent) {
+    if (navigator.__defineGetter__) {
+        navigator.__defineGetter__('userAgent', function () {
+            return userAgent;
+        });
+    } else if (Object.defineProperty) {
+        Object.defineProperty(navigator, 'userAgent', {
+            get: function () {
+                return userAgent;
+            }
+        });
+    }
+
+||webbrowsertools.com^$ua-parser,third-party,domain=unpkg.com
