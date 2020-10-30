@@ -86,7 +86,7 @@ folha.uol.com.br##.c-push-notification
 estadao.com.br##.assine-bar
 estadao.com.br##div[class="line-leia"]
 estadao.com.br###snippet-16 > div.snippet-wrapper
-@@/s2016/portal/js/advertisement.js$script,domain=estadao.com.br,important
+@@/s2016/portal/js/advertisement.js$script,domain=estadao.com.br
 !globo
 ||*.infoglobo.com.br/*private-browsing*
 ||*.infoglobo.com.br/paywall*
