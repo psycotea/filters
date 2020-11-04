@@ -1,6 +1,6 @@
-! Version: 2020291001
+! Version: 202004112020
 ! Title: EasyBrasil Simplificado
-! Last modified: 29 Oct 2020 14:21 BRT
+! Last modified: 04 Nov 2020 13:10 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -14,6 +14,15 @@
 blogs.oglobo.globo.com###pub-fullbanner-1
 blogs.oglobo.globo.com###pub-box-materia
 oglobo.globo.com##.block__subpane--advertising.block__subpane
+!macmagazine.com.br
+macmaganize.com.br###instagram-feed.instagram-feed
+!teams.microsoft.com
+teams.microsoft.com##.alert-title inset-border
+!chegg.com (experimental)
+chegg.com##body.mobile .C-common-covid-modal .dialog
+chegg.com##.C-common-covid-modal .screenBlocker
+!tecmundo
+tecmundo.com.br####listaBrandChannels.tec—-list.tec--list--numbered
 !clicknupload
 clicknupload.co##+js(acis, String.fromCharCode, /'shift'|break;/)
 *$script,3p,denyallow=bootstrapcdn.com|disqus.com|jsdelivr.net|jwpcdn.com|fastly.net|fastlylb.net|jquery.com|hwcdn.net|recaptcha.net|cloudflare.com|cloudflare.net|google.com|googleapis.com|gstatic.com|facebook.net,domain=extramovies.*
@@ -34,8 +43,6 @@ clk.*##+js(aopr, document.head.appendChild)
 ||gql.reddit.com^$badfilter
 reddit.com##h2:has-text(/^Trending Communities$/):upward(6)
 reddit.com##.awardings-bar
-!twitter.com
-twitter.com##.r-1jte41z.r-hvns9x.r-1mf7evn.r-qo02w8.r-1qk6wnv.r-c67a83.r-kemksi.r-173mn98.css-1dbjc4n > .r-cgjvx2.css-1dbjc4n
 ! https://www.reddit.com/r/uBlockOrigin/comments/7l54xr/metro_copyjacking_filter/
 metro.co.uk##+js(aeld, copy, BLACKLIST)
 folhaonline.es##.fl-col-has-cols > div[class="fl-col-content fl-node-content"] > div.fl-col-group-align-center.fl-col-group-custom-width
