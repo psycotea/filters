@@ -1,6 +1,6 @@
-! Version: 20200411001
+! Version: 20200411002
 ! Title: EasyBrasil Simplificado
-! Last modified: 04 Nov 2020 13:10 BRT
+! Last modified: 04 Nov 2020 13:19 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -15,14 +15,14 @@ blogs.oglobo.globo.com###pub-fullbanner-1
 blogs.oglobo.globo.com###pub-box-materia
 oglobo.globo.com##.block__subpane--advertising.block__subpane
 !macmagazine.com.br
-macmaganize.com.br###instagram-feed.instagram-feed
+macmaganize.com.br##.instagram-feed.instagram-feed
 !teams.microsoft.com
 teams.microsoft.com##.alert-title inset-border
 !chegg.com (experimental)
-chegg.com##body.mobile .C-common-covid-modal .dialog
+chegg.com##.body.mobile .C-common-covid-modal .dialog
 chegg.com##.C-common-covid-modal .screenBlocker
 !tecmundo
-tecmundo.com.br####listaBrandChannels.tec—-list.tec--list--numbered
+tecmundo.com.br##.listaBrandChannels.tec—-list.tec--list--numbered
 !clicknupload
 clicknupload.co##+js(acis, String.fromCharCode, /'shift'|break;/)
 *$script,3p,denyallow=bootstrapcdn.com|disqus.com|jsdelivr.net|jwpcdn.com|fastly.net|fastlylb.net|jquery.com|hwcdn.net|recaptcha.net|cloudflare.com|cloudflare.net|google.com|googleapis.com|gstatic.com|facebook.net,domain=extramovies.*
