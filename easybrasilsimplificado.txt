@@ -1,6 +1,6 @@
-! Version: 20200411003
+! Version: 20200411004
 ! Title: EasyBrasil Simplificado
-! Last modified: 04 Nov 2020 15:23 BRT
+! Last modified: 04 Nov 2020 20:18 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -27,10 +27,9 @@ www.tecmundo.com.br##.tec--home__sidebar--top.z--w-1-3.z--col > .tec--list--numb
 clicknupload.co##+js(acis, String.fromCharCode, /'shift'|break;/)
 *$script,3p,denyallow=bootstrapcdn.com|disqus.com|jsdelivr.net|jwpcdn.com|fastly.net|fastlylb.net|jquery.com|hwcdn.net|recaptcha.net|cloudflare.com|cloudflare.net|google.com|googleapis.com|gstatic.com|facebook.net,domain=extramovies.*
 @@||gdpr-tcfv2.sp-prod.net/wrapperMessagingWithoutDetection.js$script,domain=sport1.de
- @@||googletagmanager.com/gtm.js$script,domain=sport1.de
- @@||sp-prod.net^$xhr,domain=sport1.de
- google.*###tads
-##.ads-fr
+@@||googletagmanager.com/gtm.js$script,domain=sport1.de
+@@||sp-prod.net^$xhr,domain=sport1.de
+google.*###tads
 clk.ink##+js(aopw, adBlockDetected)
 clk.ink##+js(aopw, Fingerprint2)
 clk.ink##+js(noeval)
@@ -39,11 +38,10 @@ clk.ink##[data-captcha-enable="true"]
 clk.ink##[src^="/ads/"]
 clk.*##+js(aopr, document.head.appendChild)
 ||clk.ink/sw.js$script,1p
- !reddit.com
+!reddit.com
 ||gql.reddit.com^$badfilter
 reddit.com##h2:has-text(/^Trending Communities$/):upward(6)
 reddit.com##.awardings-bar
-! https://www.reddit.com/r/uBlockOrigin/comments/7l54xr/metro_copyjacking_filter/
 metro.co.uk##+js(aeld, copy, BLACKLIST)
 folhaonline.es##.fl-col-has-cols > div[class="fl-col-content fl-node-content"] > div.fl-col-group-align-center.fl-col-group-custom-width
 !folha.uol
@@ -99,16 +97,15 @@ estadao.com.br###snippet-16 > div.snippet-wrapper
 ||*.infoglobo.com.br/paywall*
 ||ogjs.infoglobo.com.br/*autenticacao*
 ||revistapegn.globo.com##.ad-fixed.animated.container-adv
-##div[class^="cookie-banner"]
 globo.com##+js(no-setTimeout-if, f.parentNode.removeChild(f), 100)
 globo.com##+js(addEventListener-defuser, copy)
 !npttech
-npttech.com/advertising.js *fuckadblock.js
+||npttech.com/advertising.js *fuckadblock.js
 !fgp
 @@||fangraphs.com/dfp.js$script,1p
 fangraphs.com##.catchall728
 ! kissanime. nz scammy 3p scripts
- kissanime.*##+js(acis, String.fromCharCode, btoa)
+kissanime.*##+js(acis, String.fromCharCode, btoa)
 !imgur
 imgur.com##+js(set, usesABP, false)
 ! Spotify Ads Blocker
@@ -180,7 +177,6 @@ youtube.com##ytd-rich-section-renderer:has-text(Postagens mais recentes do YouTu
 youtube.com##ytd-shelf-renderer:has-text(Assistir novamente)
 !knowyourmeme.com
 knowyourmeme.com##div.combo-wrapper
-! openload.co
 !ytmp3
 ytmp3.cc###ad
 !tecmundo ad detect
@@ -198,7 +194,7 @@ twitch.tv##[class^="prime-offers__pill"]
 uploadfiles.pw##+js(acis, decodeURI, decodeURIComponent)
 !clicknupload
 clicknupload.co##+js(acis, Object.defineProperty, XMLHttpRequest)
- clicknupload.co##+js(aopw, _pop)
- ! mail.ru
+clicknupload.co##+js(aopw, _pop)
+! mail.ru
 ||ad.mail.ru/crossdomain.xml
 ||video-weaver.*.hls.ttvnw.net/v*/playlist/*.m3u8$replace=/#EXT-X-DATERANGE:ID="stitched-ad[\s\S]*(#EXT-X-PROGRAM-DATE-TIME)(?![\s\S]*?#EXTINF:\d\.\d+\,live)[\s\S]*|(#EXT-X-DATERANGE:ID="stitched-ad[\s\S]*?(#EXT-X-PROGRAM-DATE-TIME)([\s\S]*?(#EXTINF:\d\.\d+\,live)))/\$5/
