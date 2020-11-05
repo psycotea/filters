@@ -14,6 +14,7 @@
 blogs.oglobo.globo.com###pub-fullbanner-1
 blogs.oglobo.globo.com###pub-box-materia
 oglobo.globo.com##.block__subpane--advertising.block__subpane
+||static.infoglobo.com.br/paywall/*
 !macmagazine.com.br
 macmagazine.com.br##.instagram-feed
 !teams.microsoft.com
@@ -198,3 +199,17 @@ clicknupload.co##+js(aopw, _pop)
 ! mail.ru
 ||ad.mail.ru/crossdomain.xml
 ||video-weaver.*.hls.ttvnw.net/v*/playlist/*.m3u8$replace=/#EXT-X-DATERANGE:ID="stitched-ad[\s\S]*(#EXT-X-PROGRAM-DATE-TIME)(?![\s\S]*?#EXTINF:\d\.\d+\,live)[\s\S]*|(#EXT-X-DATERANGE:ID="stitched-ad[\s\S]*?(#EXT-X-PROGRAM-DATE-TIME)([\s\S]*?(#EXTINF:\d\.\d+\,live)))/\$5/
+!gazeta do povo
+||www.netdeal.com.br^$domain=gazetadopovo.com.br
+!jornal do comercio
+||www.jornaldocomercio.com/src/inove/paywall.php$1p
+! O Povo
+||fivewall.com.br^$domain=opovo.com.br
+||direct.opovo.com.br/login/pages/count-unlogged$xhr,1p
+!zero hora
+||api.clicrbs.com.br/paywall-api/*$1p
+! Abril
+||experience.tinypass.com^$domain=abril.com.br
+!jornal correio
+||correio-static.cworks.cloud/vendor/bower_components/paywall.js/*$script,domain=correio24horas.com.br
+||news.google.com/swg/*$script,domain=correio24horas.com.br
