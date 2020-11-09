@@ -1,6 +1,6 @@
-! Version: 20200411004
+! Version: 20200911001
 ! Title: EasyBrasil Simplificado
-! Last modified: 04 Nov 2020 20:18 BRT
+! Last modified: 09 Nov 2020 07:18 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -213,3 +213,5 @@ clicknupload.co##+js(aopw, _pop)
 !jornal correio
 ||correio-static.cworks.cloud/vendor/bower_components/paywall.js/*$script,domain=correio24horas.com.br
 ||news.google.com/swg/*$script,domain=correio24horas.com.br
+!motorsport.com
+motorsport.uol.com.br##.ms-footer-fixbox
