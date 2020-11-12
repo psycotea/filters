@@ -1,6 +1,6 @@
-! Version: 20200911001
+! Version: 20201211001
 ! Title: EasyBrasil Simplificado
-! Last modified: 09 Nov 2020 07:18 BRT
+! Last modified: 12 Nov 2020 15:00 BRT
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -169,6 +169,8 @@ businessinsider.de##^script:has-text(Inject=!)
 |https://super.abril.com.br/wp-content/plugins/abril-plugins/abril-paywall/js/paywall.js?ver=2.0.10
 !quatro rodas
 |https://quatrorodas.abril.com.br/wp-content/plugins/abril-plugins/abril-paywall/js/paywall.js?ver=2.0.10
+quatrorodas.abril.com.br###horizontal-bar
+@@||abril.com.br^$generichide
 !gazeta do povo
 ||gazetadopovo.com.br/public/_css/paywall.css*$stylesheet
 gazetadopovo.com.br##.c-assine-container
@@ -215,3 +217,5 @@ clicknupload.co##+js(aopw, _pop)
 ||news.google.com/swg/*$script,domain=correio24horas.com.br
 !motorsport.com
 motorsport.uol.com.br##.ms-footer-fixbox
+descomplica
+descomplica.com.br##.floater-form
