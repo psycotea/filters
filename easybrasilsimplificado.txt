@@ -218,4 +218,4 @@ clicknupload.co##+js(aopw, _pop)
 !motorsport.com
 motorsport.uol.com.br##.ms-footer-fixbox
 descomplica
-descomplica.com.br##.floater-form
+descomplica.com.br##div[class="floater-form"]
