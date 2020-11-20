@@ -1,6 +1,6 @@
-! Version: 20202011001
+! Version: 20202011002
 ! Title: EasyBrasil Simplificado
-! Last modified: 2020-11-20T07:50+03:00
+! TimeUpdated: 2020-11-20T07:57+03:00
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -219,4 +219,4 @@ br.answers.yahoo.com##.QACrownAD__CrownADContainer___1cnJi
 ||guce.yahoo.com/br/collectConsentInline?brandType=nonEu&done=https%3A%2F%2Fbr.answers.yahoo.com%2Fquestion%2Findex%3Fqid%3D20201116002550AAtbNcA&gcrumb=_1tSD5U=&jsVersion=1.0.87&referer=https%3A%2F%2Fbr.answers.yahoo.com%2F$subdocument
 !gauchazh
 gauchazh.clicrbs.com.br##.module-ads__content
-gauchazh.clicrbs.com.br##.player
+gauchazh.clicrbs.com.br##.player-cookie-notice
