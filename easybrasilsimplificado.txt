@@ -1,6 +1,6 @@
-! Version: 20202011002
+! Version: 20202311001
 ! Title: EasyBrasil Simplificado
-! TimeUpdated: 2020-11-20T07:57+03:00
+! TimeUpdated: 2020-11-23T08:57+57:02
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -15,6 +15,7 @@ blogs.oglobo.globo.com###pub-fullbanner-1
 blogs.oglobo.globo.com###pub-box-materia
 oglobo.globo.com##.block__subpane--advertising.block__subpane
 ||static.infoglobo.com.br/paywall/*
+globo.com,latimes.com##+js(nostif, f.parentNode.removeChild(f), 100)
 !macmagazine.com.br
 macmagazine.com.br##.instagram-feed
 !teams.microsoft.com
@@ -175,6 +176,10 @@ gazetadopovo.com.br##.c-assine-container
 youtube.com##ytd-shelf-renderer:has-text(Para você)
 youtube.com##ytd-rich-section-renderer:has-text(Postagens mais recentes do YouTube)
 youtube.com##ytd-shelf-renderer:has-text(Assistir novamente)
+youtube.com##.masthead-ad-control,.ad-div,.pyv-afc-ads-container
+youtube.com###promotion-shelf
+*_ad_$media,domain=youtube.com,3p
+youtube.com##ytd-video-masthead-ad-advertiser-info-renderer,ytm-promoted-sparkles-web-renderer
 !knowyourmeme.com
 knowyourmeme.com##div.combo-wrapper
 !ytmp3
@@ -220,3 +225,7 @@ br.answers.yahoo.com##.QACrownAD__CrownADContainer___1cnJi
 !gauchazh
 gauchazh.clicrbs.com.br##.module-ads__content
 gauchazh.clicrbs.com.br##.player-cookie-notice
+!bandab.com.br
+*$script,redirect-rule=noopjs,domain=bandab.com.br
+!outerspace
+*$script,domain=outerspace.com.br,redirect-rule=noopjs
