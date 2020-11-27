@@ -1,6 +1,6 @@
-! Version: 20202311001
+! Version: 20202711001
 ! Title: EasyBrasil Simplificado
-! TimeUpdated: 2020-11-23T08:57+57:02
+! TimeUpdated: 2020-11-27T12:16+57:32
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -16,10 +16,12 @@ blogs.oglobo.globo.com###pub-box-materia
 oglobo.globo.com##.block__subpane--advertising.block__subpane
 ||static.infoglobo.com.br/paywall/*
 globo.com,latimes.com##+js(nostif, f.parentNode.removeChild(f), 100)
+@@||ogjs.infoglobo.com.br/*/scripts/templates/advertising/$script,domain=oglobo.globo.com
+||tag.navdmp.com/$script,redirect=noopjs,domain=globoesporte.globo.com
 !macmagazine.com.br
 macmagazine.com.br##.instagram-feed
 !teams.microsoft.com
-teams.microsoft.com##.alert-title inset-border
+teams.microsoft.com##li.app-list-item:nth-of-type(11)
 !tecmundo
 www.tecmundo.com.br##.tec--home__sidebar--top.z--w-1-3.z--col > .tec--list--numbered.tec--list
 !clicknupload
