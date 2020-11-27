@@ -1,6 +1,6 @@
-! Version: 20202711001
+! Version: 20202711002
 ! Title: EasyBrasil Simplificado
-! TimeUpdated: 2020-11-27T12:16+57:32
+! TimeUpdated: 2020-11-27T12:41+57:49
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -231,3 +231,6 @@ gauchazh.clicrbs.com.br##.player-cookie-notice
 *$script,redirect-rule=noopjs,domain=bandab.com.br
 !outerspace
 *$script,domain=outerspace.com.br,redirect-rule=noopjs
+!minhaoperadora
+www.minhaoperadora.com.br##.code-block-2.code-block
+www.minhaoperadora.com.br##.widget_addthis_tool_by_class_name_widget.sb-widget
