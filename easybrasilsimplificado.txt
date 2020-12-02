@@ -1,6 +1,6 @@
-! Version: 20202711002
+! Version: 20200212001
 ! Title: EasyBrasil Simplificado
-! TimeUpdated: 2020-11-27T12:41+57:49
+! TimeUpdated: 2020-12-02T12:03:49+03:00
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -179,9 +179,6 @@ youtube.com##ytd-shelf-renderer:has-text(Para você)
 youtube.com##ytd-rich-section-renderer:has-text(Postagens mais recentes do YouTube)
 youtube.com##ytd-shelf-renderer:has-text(Assistir novamente)
 youtube.com##.masthead-ad-control,.ad-div,.pyv-afc-ads-container
-youtube.com###promotion-shelf
-*_ad_$media,domain=youtube.com,3p
-youtube.com##ytd-video-masthead-ad-advertiser-info-renderer,ytm-promoted-sparkles-web-renderer
 !knowyourmeme.com
 knowyourmeme.com##div.combo-wrapper
 !ytmp3
