@@ -1,6 +1,6 @@
-! Version: 20200712002
+! Version: 20203112001
 ! Title: EasyBrasil Simplificado
-! TimeUpdated: 2020-12-07T12:25:49+03:00
+! TimeUpdated: 2020-12-31T10:02:49+03:00
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -187,8 +187,8 @@ ytmp3.cc###ad
 tecmundo.com.br##.fc-ab-root
 tecmundo.com.br##.tec--ad
 !letras.mus.br
-www.letras.mus.br##.modalLGPD
-www.letras.mus.br###js-lyric-cnt > .cnt-space-top
+letras.mus.br##.modalLGPD
+letras.mus.br###js-lyric-cnt > .cnt-space-top
 !infomoney
 infomoney.com.br##+js(abort-on-property-read.js, addLink)
 !twitch.com
@@ -229,8 +229,11 @@ gauchazh.clicrbs.com.br##.player-cookie-notice
 !outerspace
 *$script,domain=outerspace.com.br,redirect-rule=noopjs
 !minhaoperadora
-www.minhaoperadora.com.br##.code-block-2.code-block
-www.minhaoperadora.com.br##.widget_addthis_tool_by_class_name_widget.sb-widget
-www.promobit.com.br##.pr-cookie-modal
-www.jovemnerd.com.br##.-horizontal.ad
-
+minhaoperadora.com.br##.code-block-2.code-block
+minhaoperadora.com.br##.widget_addthis_tool_by_class_name_widget.sb-widget
+!promobit
+promobit.com.br##.pr-cookie-modal
+!jovemnerd
+jovemnerd.com.br##.-horizontal.ad
+!apoiase
+apoia.se##.ng-scope.lgpd-notice__container
