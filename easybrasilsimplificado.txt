@@ -1,6 +1,6 @@
-! Version: 20211701001
+! Version: 20212701001
 ! Title: EasyBrasil Simplificado
-! TimeUpdated: 2021-01-17T20:07:49+03:00
+! TimeUpdated: 2021-01-27T24:07:49+03:00
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -67,7 +67,6 @@ nerdmaldito.com##+js(aopw, document.onselectstart)
 !phonearena
 phonearena.com##+js(nostif, f.parentNode.removeChild(f), 100)
 !folha and uol
-! https://github.com/uBlockOrigin/uAssets/issues/66
 ||paywall.folha.uol.com.br/wall.jsonp?callback=paywall.inicio$domain=blogfolha.uol.com.br|educacao.uol.com.br|folha.uol.com.br
 !blic ad block detect
 blic.rs##+js(nostif, f.parentNode.removeChild(f), 100)
@@ -240,3 +239,6 @@ apoia.se##.ng-scope.lgpd-notice__container
 !blog.eadplataforma
 blog.eadplataforma.com##.blog.snackbarTrial
 blog.eadplataforma.com##.wp-image-.tve_image
+!streameast.live
+@@||streameast.live^$generichide
+streameast.live##+js(nobab)
