@@ -1,6 +1,6 @@
-! Version: 20212701001
+! Version: 20211202001
 ! Title: EasyBrasil Simplificado
-! TimeUpdated: 2021-01-27T24:07:49+03:00
+! TimeUpdated: 2021-01-12T09:56:49+03:00
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -242,3 +242,5 @@ blog.eadplataforma.com##.wp-image-.tve_image
 !streameast.live
 @@||streameast.live^$generichide
 streameast.live##+js(nobab)
+!telesintese
+telesintese.com.br##.vwspc-section-content.col-lg-12
