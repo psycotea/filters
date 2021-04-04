@@ -249,3 +249,4 @@ streameast.live##+js(nobab)
 telesintese.com.br##.vwspc-section-content.col-lg-12
 !adrenaline
 forum.adrenaline.com.br###top > div.p-body:nth-child(5) > div.p-body-inner > div.p-body-main:nth-child(6) > div.p-body-content:last-child > div.p-body-pageContent:last-child > div.block.block--messages:first-child > div.block-container.lbContainer:nth-child(4) > div.block-body.js-replyNewMessageContainer > ins.adsbygoogle:nth-child(2)
+forum.adrenaline.com.br###top > div.p-body:nth-child(5) > div.p-body-inner > div.p-body-main:nth-child(6) > div.p-body-content:last-child > ins.adsbygoogle.block:first-child
