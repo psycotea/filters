@@ -1,6 +1,6 @@
-! Version: 20211202001
+! Version: 20210304001
 ! Title: EasyBrasil Simplificado
-! TimeUpdated: 2021-01-12T09:56:49+03:00
+! TimeUpdated: 2021-04-03T09:56:49+03:00
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -24,6 +24,8 @@ macmagazine.com.br##.instagram-feed
 teams.microsoft.com##li.app-list-item:nth-of-type(11)
 !tecmundo
 www.tecmundo.com.br##.tec--home__sidebar--top.z--w-1-3.z--col > .tec--list--numbered.tec--list
+tecmundo.com.br###listaBrandChannels
+tecmundo.com.br###listaMateriasEspeciais
 !clicknupload
 clicknupload.co##+js(acis, String.fromCharCode, /'shift'|break;/)
 *$script,3p,denyallow=bootstrapcdn.com|disqus.com|jsdelivr.net|jwpcdn.com|fastly.net|fastlylb.net|jquery.com|hwcdn.net|recaptcha.net|cloudflare.com|cloudflare.net|google.com|googleapis.com|gstatic.com|facebook.net,domain=extramovies.*
@@ -230,6 +232,7 @@ gauchazh.clicrbs.com.br##.player-cookie-notice
 !minhaoperadora
 minhaoperadora.com.br##.code-block-2.code-block
 minhaoperadora.com.br##.widget_addthis_tool_by_class_name_widget.sb-widget
+minhaoperadora.com.br###custom_html-32 > div.textwidget.custom-html-widget > ins.adsbygoogle:nth-child(2)
 !promobit
 promobit.com.br##.pr-cookie-modal
 !jovemnerd
@@ -244,3 +247,5 @@ blog.eadplataforma.com##.wp-image-.tve_image
 streameast.live##+js(nobab)
 !telesintese
 telesintese.com.br##.vwspc-section-content.col-lg-12
+!adrenaline
+forum.adrenaline.com.br###top > div.p-body:nth-child(5) > div.p-body-inner > div.p-body-main:nth-child(6) > div.p-body-content:last-child > div.p-body-pageContent:last-child > div.block.block--messages:first-child > div.block-container.lbContainer:nth-child(4) > div.block-body.js-replyNewMessageContainer > ins.adsbygoogle:nth-child(2)
