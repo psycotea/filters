@@ -1,6 +1,6 @@
-! Version: 20210403002
+! Version: 20211004001
 ! Title: EasyBrasil Simplificado
-! TimeUpdated: 2021-04-03T09:56:49+03:00
+! TimeUpdated: 2021-10-04T09:56:49+03:00
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -171,6 +171,7 @@ businessinsider.de##^script:has-text(Inject=!)
 !quatro rodas
 |https://quatrorodas.abril.com.br/wp-content/plugins/abril-plugins/abril-paywall/js/paywall.js?ver=2.0.10
 quatrorodas.abril.com.br###horizontal-bar
+quatrorodas.abril.com.br##div.ads.fixed-ad:nth-child(3)
 @@||abril.com.br^$generichide
 !gazeta do povo
 ||gazetadopovo.com.br/public/_css/paywall.css*$stylesheet
@@ -250,3 +251,6 @@ telesintese.com.br##.vwspc-section-content.col-lg-12
 !adrenaline
 forum.adrenaline.com.br###top > div.p-body:nth-child(5) > div.p-body-inner > div.p-body-main:nth-child(6) > div.p-body-content:last-child > div.p-body-pageContent:last-child > div.block.block--messages:first-child > div.block-container.lbContainer:nth-child(4) > div.block-body.js-replyNewMessageContainer > ins.adsbygoogle:nth-child(2)
 forum.adrenaline.com.br###top > div.p-body:nth-child(5) > div.p-body-inner > div.p-body-main:nth-child(6) > div.p-body-content:last-child > ins.adsbygoogle.block:first-child
+loja.philips.com.br##div.sy-lgpd.is--active:nth-child(20)
+telesintese.com.br##div.vw-site:nth-child(6) > div.vw-content-area.clearfix.vw-content-area--right-sidebar:nth-child(2) > div.container > div.row > main.vw-content-main:first-child > article.vw-main-post.post-130456.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-tv-paga.tag-4k.tag-amazon-prime-video.tag-android.tag-claro-tv.tag-ios.tag-ultra-hd:first-child > div.vw-post-content.clearfix:nth-child(3) > div.\30 4ff423bc02c79bfda06dbad4cdc1f71:nth-child(4)
+
