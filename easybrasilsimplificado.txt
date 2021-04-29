@@ -1,6 +1,6 @@
-! Version: 20211004001
+! Version: 20212904001
 ! Title: EasyBrasil Simplificado
-! TimeUpdated: 2021-10-04T09:56:49+03:00
+! TimeUpdated: 2021-29-04T19:08:49+03:00
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -234,6 +234,8 @@ gauchazh.clicrbs.com.br##.player-cookie-notice
 minhaoperadora.com.br##.code-block-2.code-block
 minhaoperadora.com.br##.widget_addthis_tool_by_class_name_widget.sb-widget
 minhaoperadora.com.br###custom_html-32 > div.textwidget.custom-html-widget > ins.adsbygoogle:nth-child(2)
+www.minhaoperadora.com.br##.adv-link
+||www.minhaoperadora.com.br/wp-content/uploads/2021/04/Ajude-a-manter-o-site-no-ar*.png
 !promobit
 promobit.com.br##.pr-cookie-modal
 !jovemnerd
