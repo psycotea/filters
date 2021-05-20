@@ -1,6 +1,6 @@
 ! Version: 20212904001
 ! Title: EasyBrasil Simplificado
-! TimeUpdated: 2021-29-04T19:08:49+03:00
+! TimeUpdated: 2021-20-05T10:44:49+03:00
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -11,12 +11,6 @@
 !-----------------------Filtros de bloqueio de anúncios-----------------------!
 !novo domain globo ad block detect
 ||tinypass.com^$domain=oglobo.globo.com|epoca.globo.com|revistagalileu.globo.com
-blogs.oglobo.globo.com###pub-fullbanner-1
-blogs.oglobo.globo.com###pub-box-materia
-oglobo.globo.com##.block__subpane--advertising.block__subpane
-||static.infoglobo.com.br/paywall/*
-globo.com,latimes.com##+js(nostif, f.parentNode.removeChild(f), 100)
-@@||ogjs.infoglobo.com.br/*/scripts/templates/advertising/$script,domain=oglobo.globo.com
 ||tag.navdmp.com/$script,redirect=noopjs,domain=globoesporte.globo.com
 !macmagazine.com.br
 macmagazine.com.br##.instagram-feed
