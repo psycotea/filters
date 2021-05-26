@@ -1,6 +1,6 @@
 ! Version: 20212505001
 ! Title: EasyBrasil Simplificado
-! TimeUpdated: 2021-25-05T10:22:49+03:00
+! TimeUpdated: 2021-26-05T10:59:49+03:00
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -38,7 +38,7 @@ clk.*##+js(aopr, document.head.appendChild)
 !reddit.com
 ||gql.reddit.com^$badfilter
 reddit.com##h2:has-text(/^Trending Communities$/):upward(6)
-reddit.com##.awardings-bar
+reddit.com###SHORTCUT_FOCUSABLE_DIV > div:nth-child(4) > div._1nxEQl5D2Bx2jxDILRHemb > div > div.qYj03fU5CXf5t2Fc5iSvg.ListingLayout-outerContainer > div._3ozFtOe6WpJEMUtxDOIvtU:last-child > div._1vyLCp-v-tE5QvZovwrASa:last-child > div._1OVBBWLtHoSPfGCRaPzpTf:first-child > div.rpBJOHq2PR60pnwJlUyP0:nth-child(5) > div:nth-child(5)
 metro.co.uk##+js(aeld, copy, BLACKLIST)
 folhaonline.es##.fl-col-has-cols > div[class="fl-col-content fl-node-content"] > div.fl-col-group-align-center.fl-col-group-custom-width
 !folha.uol
@@ -156,6 +156,7 @@ bing.com#@##b_results > li:not(.b_algo):not(.b_ans):not(.b_pag):not(.aca_algo):n
 bing.com#@#a[h$=",Ads"]
 bing.com#@#li.b_adBottom
 bing.com#@#.b_adLastChild
+bing.com###vs_cont
 !businessinsider
 businessinsider.de##+js(nostif, .call(null), 10)
 businessinsider.de##^script:has-text(Inject=!)
