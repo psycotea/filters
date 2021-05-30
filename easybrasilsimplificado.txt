@@ -1,6 +1,6 @@
-! Version: 20212705001
+! Version: 20213005001
 ! Title: EasyBrasil Simplificado
-! TimeUpdated: 2021-27-05T08:54:49+03:00
+! TimeUpdated: 2021-30-05T20:49:49+03:00
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -253,3 +253,6 @@ loja.philips.com.br##div.sy-lgpd.is--active:nth-child(20)
 telesintese.com.br##div.vw-site:nth-child(6) > div.vw-content-area.clearfix.vw-content-area--right-sidebar:nth-child(2) > div.container > div.row > main.vw-content-main:first-child > article.vw-main-post.post-130456.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-tv-paga.tag-4k.tag-amazon-prime-video.tag-android.tag-claro-tv.tag-ios.tag-ultra-hd:first-child > div.vw-post-content.clearfix:nth-child(3) > div.\30 4ff423bc02c79bfda06dbad4cdc1f71:nth-child(4)
 !conhecimentocientifico
 conhecimentocientifico.r7.com###content > form.pb-3.position-sticky.bg-dark.text-white.js-form-set-gdpr-consent-cookie:last-child
+!letras.com
+letras.com###scnt-space-top
+letras.br##.modalLGPD

@@ -491,3 +491,10 @@ if __name__ == '__main__':
     start()
 print("DONE")
 wait = input("PRESS ENTER TO EXIT.")
+
+
+check_MacOS version
+def versionstatusbar
+addresspart = validurl
+if addresspart = validurl;
+return True
