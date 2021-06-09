@@ -1,5 +1,5 @@
 ! Version: 20210906001
-! Title: EasyBrasil Simplificado
+! Title: psycotea's annoyances
 ! TimeUpdated: 2021-09-06T14:37:49+03:00
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
