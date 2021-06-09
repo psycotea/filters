@@ -1,0 +1,264 @@
+! Version: 20210906001
+! Title: Psycotea's annoyances
+! TimeUpdated: 2021-09-06T14:37:49+03:00
+! Expires: 04 days (update frequency)
+! Description: filters for general blocking
+! Homepage: https://github.com/Sam5883/filters
+! Licence: https://creativecommons.org/licenses/by-sa/4.0/
+! Github issues: https://github.com/Sam5883/filters/issues
+! GitHub pull requests: https://github.com/Sam5883/filters/pulls
+!
+!-----------------------Filtros de bloqueio de anúncios-----------------------!
+!novo domain globo ad block detect
+||tinypass.com^$domain=oglobo.globo.com|epoca.globo.com|revistagalileu.globo.com
+||tag.navdmp.com/$script,redirect=noopjs,domain=globoesporte.globo.com
+!macmagazine.com.br
+macmagazine.com.br##.instagram-feed
+!teams.microsoft.com
+teams.microsoft.com##li.app-list-item:nth-of-type(11)
+!tecmundo
+www.tecmundo.com.br##.tec--home__sidebar--top.z--w-1-3.z--col > .tec--list--numbered.tec--list
+tecmundo.com.br###listaBrandChannels
+tecmundo.com.br###listaMateriasEspeciais
+!clicknupload
+clicknupload.co##+js(acis, String.fromCharCode, /'shift'|break;/)
+*$script,3p,denyallow=bootstrapcdn.com|disqus.com|jsdelivr.net|jwpcdn.com|fastly.net|fastlylb.net|jquery.com|hwcdn.net|recaptcha.net|cloudflare.com|cloudflare.net|google.com|googleapis.com|gstatic.com|facebook.net,domain=extramovies.*
+@@||gdpr-tcfv2.sp-prod.net/wrapperMessagingWithoutDetection.js$script,domain=sport1.de
+@@||googletagmanager.com/gtm.js$script,domain=sport1.de
+@@||sp-prod.net^$xhr,domain=sport1.de
+google.*###tads
+clk.ink##+js(aopw, adBlockDetected)
+clk.ink##+js(aopw, Fingerprint2)
+clk.ink##+js(noeval)
+clk.ink##+js(set, blurred, false)
+clk.ink##[data-captcha-enable="true"]
+clk.ink##[src^="/ads/"]
+clk.*##+js(aopr, document.head.appendChild)
+||clk.ink/sw.js$script,1p
+!reddit.com
+||gql.reddit.com^$badfilter
+reddit.com##h2:has-text(/^Trending Communities$/):upward(6)
+reddit.com###SHORTCUT_FOCUSABLE_DIV > div:nth-child(4) > div._1nxEQl5D2Bx2jxDILRHemb > div > div.qYj03fU5CXf5t2Fc5iSvg.ListingLayout-outerContainer > div._3ozFtOe6WpJEMUtxDOIvtU:last-child > div._1vyLCp-v-tE5QvZovwrASa:last-child > div._1OVBBWLtHoSPfGCRaPzpTf:first-child > div.rpBJOHq2PR60pnwJlUyP0:nth-child(5) > div:nth-child(5)
+www.reddit.com##._23q1waDr4n_2fR5A7zcZzb.x0hiXHicn7r3BG9m1FJH4
+metro.co.uk##+js(aeld, copy, BLACKLIST)
+folhaonline.es##.fl-col-has-cols > div[class="fl-col-content fl-node-content"] > div.fl-col-group-align-center.fl-col-group-custom-width
+!folha.uol
+www1.folha.uol.com.br##div:nth-child(3) > header.l-header.u-no-print.c-elastic-header:nth-child(5) > div.block:last-child > div.container
+www1.folha.uol.com.br##div:nth-child(3) > header.l-header.u-no-print.c-elastic-header.c-elastic-header--affixed.is-expanded:nth-child(5) > div.l-header__wrapper:nth-child(2) > div.container:first-child > div.c-tools-share.c-tools-share--inner.js-c-tools-share.rs_skip:last-child
+www1.folha.uol.com.br##div:nth-child(3) > div:nth-child(7) > div
+||pushanert.com^$third-party
+||pushalert.co^$third-party
+||pushnews.eu^$third-party
+||cdn.pn.vg^$third-party
+@@||www.googletagmanager.com/gtag/js$script,domain=eneldistribuicaosp.com.br
+||conteudo.jsuol.com.br/p/perfil/js/widgetNotify.v3.js$xhr,domain=uol.com.br,important
+@@||hcaptcha.com
+twitch.tv##.tw-z-above.tw-relative.tw-full-width.tw-c-text-base.blue-bar
+! dicionariocriativo.com.br anti-adblock messages
+dicionariocriativo.com.br##.usingblock
+! https://github.com/jspenguin2017/uBlockProtector/issues/968
+iosgods.com##+js(aopw, CheckAdLoad)
+! https://github.com/uBlockOrigin/uAssets/issues/1069
+nerdmaldito.com##+js(ra, onselectstart)
+nerdmaldito.com##+js(aopw, document.onselectstart)
+!phonearena
+phonearena.com##+js(nostif, f.parentNode.removeChild(f), 100)
+!folha and uol
+||paywall.folha.uol.com.br/wall.jsonp?callback=paywall.inicio$domain=blogfolha.uol.com.br|educacao.uol.com.br|folha.uol.com.br
+!blic ad block detect
+blic.rs##+js(nostif, f.parentNode.removeChild(f), 100)
+! https://github.com/uBlockOrigin/uAssets/issues/124
+||jsuol.com.br/*/detectadblock/$script,important,domain=uol.com.br
+! https://github.com/uBlockOrigin/uAssets/issues/765
+www.uol##.content-lightbox
+www.uol##.overlay-lightbox
+olimpiadas.uol.com.br##+js(aopw, detectingAdblocks)
+uol.com.br##.banner
+uol.com.br##.bg-banner
+uol.com.br##[id^="banner-300x250"]:remove()
+||paywall.folha.uol.com.br/*
+||static.folha.uol.com.br/paywall/*
+@@||paywall.folha.uol.com.br/status.php^$document
+folha.uol.com.br##bt-read-more-content
+folha.uol.com.br##.c-push-notification
+! Estadão - https://estadao.com.br
+||*.estadao.com.br/paywall/*
+||estadao.com.br/estadao/js/modules/navegg*$script
+||estadao.com.br/web-push/modal-naoassinante$xmlhttprequest,first-party
+estadao.com.br##.assine-bar
+estadao.com.br##div[class="line-leia"]
+estadao.com.br###snippet-16 > div.snippet-wrapper
+@@/s2016/portal/js/advertisement.js$script,domain=estadao.com.br
+!globo
+||*.infoglobo.com.br/*private-browsing*
+||*.infoglobo.com.br/paywall*
+||ogjs.infoglobo.com.br/*autenticacao*
+||revistapegn.globo.com##.ad-fixed.animated.container-adv
+globo.com##+js(no-setTimeout-if, f.parentNode.removeChild(f), 100)
+globo.com##+js(addEventListener-defuser, copy)
+!npttech
+||npttech.com/advertising.js *fuckadblock.js
+!fgp
+@@||fangraphs.com/dfp.js$script,1p
+fangraphs.com##.catchall728
+! kissanime. nz scammy 3p scripts
+kissanime.*##+js(acis, String.fromCharCode, btoa)
+!imgur
+imgur.com##+js(set, usesABP, false)
+! Spotify Ads Blocker
+ads.pubmatic.com
+gads.pubmatic.com
+pubads.g.doubleclick.net
+securepubads.g.doubleclick.net
+www.googletagservices.com
+||cloudfront.net/mp3-ad
+||adeventtracker.spotify.com
+@@||spclient.wg.spotify.com/connect-api/v2/from/*$xmlhttprequest
+@@||spclient.wg.spotify.com/connect-api$xmlhttprequest
+*cloudfront.net/mp3-ad/*
+@@||spclient.wg.spotify.com/connect-api$xmlhttprequest
+/mp3-ad/*
+||audio-fa.scdn.co/audio/*$media,redirect=noopmp3-0.1s
+||cloudfront.net/mp3-ad
+||adeventtracker.spotify.com
+||adeventtracker.spotify.com^
+||audio-fa.scdn.co/audio/$media,domain=open.spotify.com|play.spotify.com
+||audio-fa.scdn.co/audio/*$media,redirect=noopmp3-0.1s
+||audio-akp-spotify-com.akamaized.net/audio/*$media,redirect=noopmp3-0.1s
+@@||spotify.com^$cname
+://ads.$domain=~ads.spotify.com
+!yahoo
+||yahoo.com###guce-inline-consent-iframe
+!readspeaker
+||*.readspeaker.com/*
+||f1-na.readspeaker.com/*
+!sharpen.design
+@@||sharpen.design^script,xhr,1p
+!google recaptcha
+@@||www.google.com/recaptcha/*$css
+@@||www.google.com/recaptcha/*$image
+@@||www.google.com/recaptcha/*$media
+@@||www.google.com/recaptcha/*$script
+@@||www.google.com/recaptcha/*$xhr
+@@||www.google.com/recaptcha/*$frame
+@@||www.gstatic.com/recaptcha/*$script
+@@||www.gstatic.com/recaptcha/*$xhr
+bing.com##[onclick^="ad_choice"]:upward(3)
+bing.com###b_results > li[style]:not([class])
+bing.com##.b_algo:has(p:matches-css-before(content: "Ad"))
+bing.com##+js(set, Blob, noopFunc)
+bing.com##+js(set, AdBlockerTracking.AdBlockMonitor, noopFunc)
+bing.com##+js(set, AdBTrack.AdbMon.isBlocked, noopFunc)
+bing.com##.productAd
+bing.com##.b_ad:remove()
+bing.com##.b_ad:style(position: absolute !important; left: -3000px !important;)
+bing.com#@#.b_ad
+bing.com#@##b_results > li:not(.b_algo):not(.b_ans):not(.b_pag):not(.aca_algo):not(.aca_algo_count):not(.b_msg)
+bing.com#@#a[h$=",Ads"]
+bing.com#@#li.b_adBottom
+bing.com#@#.b_adLastChild
+bing.com###vs_cont
+!businessinsider
+businessinsider.de##+js(nostif, .call(null), 10)
+businessinsider.de##^script:has-text(Inject=!)
+||npttech.com/advertising.js$script,important
+!super.abril
+|https://super.abril.com.br/wp-content/plugins/abril-plugins/abril-paywall/js/paywall.js?ver=2.0.10
+!quatro rodas
+|https://quatrorodas.abril.com.br/wp-content/plugins/abril-plugins/abril-paywall/js/paywall.js?ver=2.0.10
+quatrorodas.abril.com.br###horizontal-bar
+quatrorodas.abril.com.br##div.ads.fixed-ad:nth-child(3)
+@@||abril.com.br^$generichide
+!gazeta do povo
+||gazetadopovo.com.br/public/_css/paywall.css*$stylesheet
+gazetadopovo.com.br##.c-assine-container
+!youtube.com
+youtube.com##ytd-shelf-renderer:has-text(Para você)
+youtube.com##ytd-rich-section-renderer:has-text(Postagens mais recentes do YouTube)
+youtube.com##ytd-shelf-renderer:has-text(Assistir novamente)
+youtube.com##.masthead-ad-control,.ad-div,.pyv-afc-ads-container
+!knowyourmeme.com
+knowyourmeme.com##div.combo-wrapper
+!ytmp3
+ytmp3.cc###ad
+!tecmundo ad detect
+tecmundo.com.br##.fc-ab-root
+tecmundo.com.br##.tec--ad
+!letras.mus.br
+letras.mus.br##.modalLGPD
+letras.mus.br###js-lyric-cnt > .cnt-space-top
+!infomoney
+infomoney.com.br##+js(abort-on-property-read.js, addLink)
+!twitch.com
+twitch.tv##.tw-z-above.tw-relative.tw-full-width.tw-c-text-base.blue-bar
+twitch.tv##[class^="prime-offers__pill"]
+!uploadfiles
+uploadfiles.pw##+js(acis, decodeURI, decodeURIComponent)
+!clicknupload
+clicknupload.co##+js(acis, Object.defineProperty, XMLHttpRequest)
+clicknupload.co##+js(aopw, _pop)
+! mail.ru
+||ad.mail.ru/crossdomain.xml
+||video-weaver.*.hls.ttvnw.net/v*/playlist/*.m3u8$replace=/#EXT-X-DATERANGE:ID="stitched-ad[\s\S]*(#EXT-X-PROGRAM-DATE-TIME)(?![\s\S]*?#EXTINF:\d\.\d+\,live)[\s\S]*|(#EXT-X-DATERANGE:ID="stitched-ad[\s\S]*?(#EXT-X-PROGRAM-DATE-TIME)([\s\S]*?(#EXTINF:\d\.\d+\,live)))/\$5/
+!gazeta do povo
+||www.netdeal.com.br^$domain=gazetadopovo.com.br
+!jornal do comercio
+||www.jornaldocomercio.com/src/inove/paywall.php$1p
+! O Povo
+||fivewall.com.br^$domain=opovo.com.br
+||direct.opovo.com.br/login/pages/count-unlogged$xhr,1p
+!zero hora
+||api.clicrbs.com.br/paywall-api/*$1p
+! Abril
+||experience.tinypass.com^$domain=abril.com.br
+!jornal correio
+||correio-static.cworks.cloud/vendor/bower_components/paywall.js/*$script,domain=correio24horas.com.br
+||news.google.com/swg/*$script,domain=correio24horas.com.br
+!motorsport.com
+motorsport.uol.com.br##.ms-footer-fixbox
+!yahoo respostas
+br.answers.yahoo.com##.QACrownAD__CrownADContainer___1cnJi
+||guce.yahoo.com/br/collectConsentInline?brandType=nonEu&done=https%3A%2F%2Fbr.answers.yahoo.com%2Fquestion%2Findex%3Fqid%3D20201116002550AAtbNcA&gcrumb=_1tSD5U=&jsVersion=1.0.87&referer=https%3A%2F%2Fbr.answers.yahoo.com%2F$subdocument
+!gauchazh
+gauchazh.clicrbs.com.br##.module-ads__content
+gauchazh.clicrbs.com.br##.player-cookie-notice
+!bandab.com.br
+*$script,redirect-rule=noopjs,domain=bandab.com.br
+!outerspace
+*$script,domain=outerspace.com.br,redirect-rule=noopjs
+!minhaoperadora
+minhaoperadora.com.br##.code-block-2.code-block
+minhaoperadora.com.br##.widget_addthis_tool_by_class_name_widget.sb-widget
+minhaoperadora.com.br###custom_html-32 > div.textwidget.custom-html-widget > ins.adsbygoogle:nth-child(2)
+www.minhaoperadora.com.br##.adv-link
+||www.minhaoperadora.com.br/wp-content/uploads/2021/04/Ajude-a-manter-o-site-no-ar*.png
+!promobit
+promobit.com.br##.pr-cookie-modal
+!jovemnerd
+jovemnerd.com.br##.-horizontal.ad
+!apoiase
+apoia.se##.ng-scope.lgpd-notice__container
+!blog.eadplataforma
+blog.eadplataforma.com##.blog.snackbarTrial
+blog.eadplataforma.com##.wp-image-.tve_image
+!streameast.live
+@@||streameast.live^$generichide
+streameast.live##+js(nobab)
+!telesintese
+telesintese.com.br##.vwspc-section-content.col-lg-12
+!adrenaline
+forum.adrenaline.com.br###top > div.p-body:nth-child(5) > div.p-body-inner > div.p-body-main:nth-child(6) > div.p-body-content:last-child > div.p-body-pageContent:last-child > div.block.block--messages:first-child > div.block-container.lbContainer:nth-child(4) > div.block-body.js-replyNewMessageContainer > ins.adsbygoogle:nth-child(2)
+forum.adrenaline.com.br###top > div.p-body:nth-child(5) > div.p-body-inner > div.p-body-main:nth-child(6) > div.p-body-content:last-child > ins.adsbygoogle.block:first-child
+loja.philips.com.br##div.sy-lgpd.is--active:nth-child(20)
+telesintese.com.br##div.vw-site:nth-child(6) > div.vw-content-area.clearfix.vw-content-area--right-sidebar:nth-child(2) > div.container > div.row > main.vw-content-main:first-child > article.vw-main-post.post-130456.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-tv-paga.tag-4k.tag-amazon-prime-video.tag-android.tag-claro-tv.tag-ios.tag-ultra-hd:first-child > div.vw-post-content.clearfix:nth-child(3) > div.\30 4ff423bc02c79bfda06dbad4cdc1f71:nth-child(4)
+!conhecimentocientifico
+conhecimentocientifico.r7.com###content > form.pb-3.position-sticky.bg-dark.text-white.js-form-set-gdpr-consent-cookie:last-child
+!letras.com
+letras.com###scnt-space-top
+letras.br##.modalLGPD
+!minhaclaro
+minhaclaroresidencial.claro.com.br###consentimento-lgpd
+!santacatarina
+santacatarina-sp.com.br##div.banner-consent:last-child > div.banner-consent-wrapper
+!anatel consumidor
+@@||apps.anatel.gov.br/anatelconsumidor$removeparam
