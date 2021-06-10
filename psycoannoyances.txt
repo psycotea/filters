@@ -1,6 +1,7 @@
-! Version: 20210906002
+! Version: 20211006001
 ! Title: Psycotea's annoyances
-! TimeUpdated: 2021-09-06T17:28:49+03:00
+! Description: annoyance block list
+! TimeUpdated: 2021-10-06T15:06:49+03:00
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -249,8 +250,10 @@ telesintese.com.br##.vwspc-section-content.col-lg-12
 !adrenaline
 forum.adrenaline.com.br###top > div.p-body:nth-child(5) > div.p-body-inner > div.p-body-main:nth-child(6) > div.p-body-content:last-child > div.p-body-pageContent:last-child > div.block.block--messages:first-child > div.block-container.lbContainer:nth-child(4) > div.block-body.js-replyNewMessageContainer > ins.adsbygoogle:nth-child(2)
 forum.adrenaline.com.br###top > div.p-body:nth-child(5) > div.p-body-inner > div.p-body-main:nth-child(6) > div.p-body-content:last-child > ins.adsbygoogle.block:first-child
-loja.philips.com.br##div.sy-lgpd.is--active:nth-child(20)
-telesintese.com.br##div.vw-site:nth-child(6) > div.vw-content-area.clearfix.vw-content-area--right-sidebar:nth-child(2) > div.container > div.row > main.vw-content-main:first-child > article.vw-main-post.post-130456.post.type-post.status-publish.format-standard.has-post-thumbnail.hentry.category-tv-paga.tag-4k.tag-amazon-prime-video.tag-android.tag-claro-tv.tag-ios.tag-ultra-hd:first-child > div.vw-post-content.clearfix:nth-child(3) > div.\30 4ff423bc02c79bfda06dbad4cdc1f71:nth-child(4)
+!philips loja
+www.loja.philips.com.br##.is--active.sy-lgpd
+!telesintese
+www.telesintese.com.br###vwspc-section-3 > .container > .row > .vwspc-section-sidebar.col-lg-4
 !conhecimentocientifico
 conhecimentocientifico.r7.com###content > form.pb-3.position-sticky.bg-dark.text-white.js-form-set-gdpr-consent-cookie:last-child
 !letras.com
