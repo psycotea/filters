@@ -267,3 +267,9 @@ minhaclaroresidencial.claro.com.br###consentimento-lgpd
 santacatarina-sp.com.br##div.banner-consent:last-child > div.banner-consent-wrapper
 !anatel consumidor
 @@||apps.anatel.gov.br/anatelconsumidor$removeparam
+!ubreak r7
+||cdn.pn.vg^$script,domain=r7.com
+||noticias.r7.com/pushnews-sw.js$xhr,1p
+!streamest
+@@||streameast.live^$generichide
+streameast.live##+js(nobab)
