@@ -1,7 +1,7 @@
-! Version: 20211018001
+! Version: 20211029001
 ! Title: Psycotea's annoyances
 ! Description: annoyance block list
-! TimeUpdated: 2021-10-18T15:06:49+03:00
+! TimeUpdated: 2021-10-29T15:06:49+03:00
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -269,3 +269,5 @@ streameast.live##+js(nobab)
 !macmagazine
 macmagazine.com.br###bannertopo
 ||macmagazine.com.br/wp-content/uploads/2021/10/Banner_iCaiu_Assistencia_MacMagazine_Desktop.png
+!https://brainly.com.br
+brainly.com.br##.js-react-adblock-banner.brn-blocker-box--billboard.brn-blocker-box
