@@ -1,7 +1,7 @@
-! Version: 20211207001
+! Version: 20220301
 ! Title: Psycotea's annoyances
 ! Description: annoyance block list
-! TimeUpdated: 2021-12-07T15:08:03+03:00
+! TimeUpdated: 2022-03-01T10:52:03+00:00
 ! Expires: 04 days (update frequency)
 ! Description: filters for general blocking
 ! Homepage: https://github.com/Sam5883/filters
@@ -153,9 +153,6 @@ letras.mus.br##.modalLGPD
 letras.mus.br###js-lyric-cnt > .cnt-space-top
 !infomoney
 infomoney.com.br##+js(abort-on-property-read.js, addLink)
-!twitch.com
-twitch.tv##.tw-z-above.tw-relative.tw-full-width.tw-c-text-base.blue-bar
-twitch.tv##[class^="prime-offers__pill"]
 !uploadfiles
 uploadfiles.pw##+js(acis, decodeURI, decodeURIComponent)
 !clicknupload
@@ -201,9 +198,6 @@ blog.eadplataforma.com##.wp-image-.tve_image
 streameast.live##+js(nobab)
 !telesintese
 telesintese.com.br##.vwspc-section-content.col-lg-12
-!adrenaline
-forum.adrenaline.com.br###top > div.p-body:nth-child(5) > div.p-body-inner > div.p-body-main:nth-child(6) > div.p-body-content:last-child > div.p-body-pageContent:last-child > div.block.block--messages:first-child > div.block-container.lbContainer:nth-child(4) > div.block-body.js-replyNewMessageContainer > ins.adsbygoogle:nth-child(2)
-forum.adrenaline.com.br###top > div.p-body:nth-child(5) > div.p-body-inner > div.p-body-main:nth-child(6) > div.p-body-content:last-child > ins.adsbygoogle.block:first-child
 !philips loja
 www.loja.philips.com.br##.is--active.sy-lgpd
 !telesintese
@@ -234,4 +228,6 @@ macmagazine.com.br###bannertopo
 brainly.com.br##.js-react-adblock-banner.brn-blocker-box--billboard.brn-blocker-box
 !twitter more tweets
 twitter.com##[aria-label="Timeline: Conversation"] h2>div>span:has-text(/^More Tweets$/):upward([style^="transform"])
+!youtube.com
+youtube.com##+js(aeld, mouseenter, console.warn)
 
