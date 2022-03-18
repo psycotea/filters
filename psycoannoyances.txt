@@ -1,4 +1,4 @@
-! Version: 20220305
+! Version: 20220318
 ! Title: Psycotea's annoyances
 ! Description: annoyance block list
 ! Expires: 04 days (update frequency)
@@ -12,10 +12,6 @@
 !novo domain globo ad block detect
 ||tinypass.com^$domain=oglobo.globo.com|epoca.globo.com|revistagalileu.globo.com
 ||tag.navdmp.com/$script,redirect=noopjs,domain=globoesporte.globo.com
-!tecmundo
-www.tecmundo.com.br##.tec--home__sidebar--top.z--w-1-3.z--col > .tec--list--numbered.tec--list
-tecmundo.com.br###listaBrandChannels
-tecmundo.com.br###listaMateriasEspeciais
 !reddit.com
 reddit.com##a[href^="/rpan/"] > h3:has-text(/Top (livestream|broadcast)/):upward(7)
 www.reddit.com##._23q1waDr4n_2fR5A7zcZzb.x0hiXHicn7r3BG9m1FJH4
@@ -131,6 +127,8 @@ ytmp3.cc###ad
 !tecmundo ad detect
 tecmundo.com.br##.fc-ab-root
 tecmundo.com.br##.tec--ad
+tecmundo.com.br###listaBrandChannels
+tecmundo.com.br###listaMateriasEspeciais
 !letras.mus.br
 letras.mus.br##.modalLGPD
 letras.mus.br###js-lyric-cnt > .cnt-space-top
@@ -203,7 +201,6 @@ apps.anatel.gov.br##.cnt_app
 streameast.live##+js(nobab)
 !macmagazine
 macmagazine.com.br###bannertopo
-||macmagazine.com.br/wp-content/uploads/2021/10/Banner_iCaiu_Assistencia_MacMagazine_Desktop.png
 macmagazine.com.br##.instagram-feed
 !https://brainly.com.br
 brainly.com.br##.js-react-adblock-banner.brn-blocker-box--billboard.brn-blocker-box
@@ -215,3 +212,5 @@ soundcloud.com###onetrust-consent-sdk
 g1.globo.com###cookie-banner-lgpd
 !le monde brasil
 diplomatique.org.br##.cc-color-override-34817967.cc-bottom.cc-theme-edgeless.cc-type-info.cc-banner.cc-window
+!reclameaqui hugme
+app.hugme.com.br###containerCookiesConsent
