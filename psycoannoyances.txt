@@ -1,4 +1,4 @@
-! Version: 20220318
+! Version: 20220502
 ! Title: Psycotea's annoyances
 ! Description: annoyance block list
 ! Expires: 04 days (update frequency)
@@ -214,3 +214,6 @@ g1.globo.com###cookie-banner-lgpd
 diplomatique.org.br##.cc-color-override-34817967.cc-bottom.cc-theme-edgeless.cc-type-info.cc-banner.cc-window
 !reclameaqui hugme
 app.hugme.com.br###containerCookiesConsent
+!estapar
+novazonaazulsp.estapar.com.br###estapar-cp
+novazonaazulsp.estapar.com.br##.notificationSession
