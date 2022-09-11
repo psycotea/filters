@@ -1,0 +1,8 @@
+! Version: 001
+! Title: mailtrack blocklist
+! Expires: 30 days (update frequency)
+! Description: adobe telemetry blocklist
+
+!-----------------------Blocklist-----------------------!
+||mailtrack.io^
+||googleusercontent.com/proxy/$domain=mail.google.com
