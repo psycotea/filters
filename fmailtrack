@@ -1,7 +1,7 @@
-! Version: 001
+! Version: 002
 ! Title: mailtrack blocklist
 ! Expires: 30 days (update frequency)
-! Description: adobe telemetry blocklist
+! Description: mailtrack blocklist
 
 !-----------------------Blocklist-----------------------!
 ||mailtrack.io^
